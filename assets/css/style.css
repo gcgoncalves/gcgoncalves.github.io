@@ -1,3 +1,10 @@
+/* FONTS */
+@font-face {
+  font-family: 'agitpropmedium';
+  src: url("agitpm-webfont.eot");
+  src: url("agitpm-webfont.eot?#iefix") format("embedded-opentype"), url("agitpm-webfont.woff2") format("woff2"), url("agitpm-webfont.woff") format("woff"), url("agitpm-webfont.ttf") format("truetype"), url("agitpm-webfont.svg#agitpropmedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /* RESETS */
 body {
   margin: 0;
