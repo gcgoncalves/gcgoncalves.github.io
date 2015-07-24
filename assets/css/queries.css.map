@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,yBAA0B;;;;EAMlB,uBAAG;IACC,SAAS,EAAE,eAAe;IAE1B,kCAAW;MAAE,SAAS,EAAE,eAAe;EAInC,2CAAG;IACF,OAAO,EAAE,oBAAoB;IAC1B,MAAM,EAAE,eAAe",
+"mappings": "AAAA,yBAA0B;;;;EAI1B,UAAU;;IAEF,uBAAG;MACC,SAAS,EAAE,eAAe;MAE1B,kCAAW;QAAE,SAAS,EAAE,eAAe;IAInC,2CAAG;MACF,OAAO,EAAE,oBAAoB;MAC1B,MAAM,EAAE,eAAe",
 "sources": ["queries.scss"],
 "names": [],
 "file": "queries.css"
