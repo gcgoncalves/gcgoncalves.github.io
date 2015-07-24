@@ -43,6 +43,7 @@ body {
   height: 100%; }
   .home_body .main_box {
     text-align: center;
+    word-wrap: break-word;
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
