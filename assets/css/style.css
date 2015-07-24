@@ -1,14 +1,31 @@
-/* FONTS */
+/*---------------*/
+/*---- FONTS ----*/
+/*---------------*/
 @font-face {
   font-family: 'agitpropmedium';
-  src: url("agitpm-webfont.eot");
-  src: url("agitpm-webfont.eot?#iefix") format("embedded-opentype"), url("agitpm-webfont.woff2") format("woff2"), url("agitpm-webfont.woff") format("woff"), url("agitpm-webfont.ttf") format("truetype"), url("agitpm-webfont.svg#agitpropmedium") format("svg");
+  src: url("../fonts/agitpm-webfont.eot");
+  src: url("../fonts/agitpm-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/agitpm-webfont.woff2") format("woff2"), url("../fonts/agitpm-webfont.woff") format("woff"), url("../fonts/agitpm-webfont.ttf") format("truetype"), url("../fonts/agitpm-webfont.svg#agitpropmedium") format("svg");
   font-weight: normal;
   font-style: normal; }
-/* RESETS */
+/*---------------*/
+/*---- RESETS ---*/
+/*---------------*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
 body {
   margin: 0;
+  padding: 0;
   border: 0; }
+
+.btn {
+  padding: 5px;
+  border: 2px solid #ccc;
+  background: rgba(255, 255, 255, 0.5); }
 
 /*---------------*/
 /*---- HOME -----*/
@@ -24,22 +41,34 @@ body {
   transform-style: preserve-3d;
   display: block;
   height: 100%; }
-  .home_body .main_nav {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    border: 1px solid #ccc;
+  .home_body .main_box {
+    text-align: center;
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
-    .home_body .main_nav .nav_menu {
-      display: inline-block;
-      vertical-align: middle;
-      list-style: none;
-      margin: 15px auto; }
-      .home_body .main_nav .nav_menu li {
-        display: inline;
-        border: 1px solid #ccc; }
+    .home_body .main_box h1 {
+      font-family: 'agitpropmedium';
+      font-size: 78px;
+      color: #ddd; }
+      .home_body .main_box h1 .glyphicon {
+        font-size: 52px; }
+    .home_body .main_box .main_nav {
+      background-color: rgba(222, 222, 222, 0.5);
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      text-align: center;
+      position: relative; }
+      .home_body .main_box .main_nav .nav_menu {
+        display: inline-block;
+        vertical-align: middle;
+        list-style: none;
+        margin: 15px auto; }
+        .home_body .main_box .main_nav .nav_menu li {
+          display: inline;
+          margin: 0 15px; }
+  .home_body .btn {
+    border: 1px solid #ccc; }
 
 /*# sourceMappingURL=style.css.map */
