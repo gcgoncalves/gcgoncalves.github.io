@@ -13,7 +13,7 @@
 /*---- HOME -----*/
 /*---------------*/
 body {
-  background: #ffebee; }
+  background: #ffeeee; }
 
 .home_body {
   height: 100%;
@@ -33,6 +33,11 @@ body {
       transform: translateY(-50%); }
   .home_body .main_box {
     padding-top: 20px; }
+    .home_body .main_box .record {
+      width: 100%;
+      max-width: 600px; }
+      .home_body .main_box .record img {
+        width: 100%; }
   .home_body .footer_nav {
     text-align: center; }
   .home_body .smedia {

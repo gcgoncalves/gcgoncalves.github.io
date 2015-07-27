@@ -14,7 +14,7 @@
 /*---- HOME -----*/
 /*---------------*/
 body{
-  background:#ffebee;
+  background:#ffeeee;
 }
 
 .home_body{
@@ -36,15 +36,27 @@ body{
 
     .main_nav {
       .nav_menu {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+        position:relative;
+        top:50%;
+        transform:translateY(-50%);
       }
     }
   }
 
   .main_box {
-    padding-top: 20px;
+    padding-top:20px;
+
+    .record{
+      width:100%;
+      max-width:600px;
+      &:hover{
+
+      }
+
+      img{
+        width:100%; 
+      }
+    }
   }
 
   .footer_nav{ text-align:center; }

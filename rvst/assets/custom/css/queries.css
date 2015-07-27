@@ -4,8 +4,10 @@
   /*---------------*/
   .home_body .header .logo img {
     width: 100%; }
-  .home_body .main_box .record img {
-    width: 100%; }
+  .home_body .main_box .record {
+    max-width: 100% !important; }
+    .home_body .main_box .record img {
+      width: 100%; }
   .home_body .smedia {
     width: 48px;
     height: 48px;

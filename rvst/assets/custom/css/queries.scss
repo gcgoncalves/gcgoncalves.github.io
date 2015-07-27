@@ -9,8 +9,12 @@
     }
   }
   .main_box{
-    .record img{
-      width:100%;
+    .record {
+      max-width:100% !important;
+      
+      img{
+        width:100%;
+      }
     }
   }
 
