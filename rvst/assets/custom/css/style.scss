@@ -1,0 +1,77 @@
+/*---------------*/
+/*---- RESETS ---*/
+/*---------------*/
+
+* {
+  margin:0px;
+  padding:0px;
+  border:0;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box; }
+
+/*---------------*/
+/*---- HOME -----*/
+/*---------------*/
+body{
+  background:#ffebee;
+}
+
+.home_body{
+  height:100%;
+  margin:0px;
+  padding:0px;
+  
+  .header{
+    display:inline-flex;;
+
+    .logo{
+      margin:0;
+      padding:0;
+      h1 {
+        margin:0;
+        padding:0;
+      }
+    }
+
+    .main_nav {
+      .nav_menu {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .main_box {
+    padding-top: 20px;
+  }
+
+  .footer_nav{ text-align:center; }
+
+  .smedia{
+    width:64px;
+    height:64px;
+    margin:10px;
+  }
+  .smedia.fcbk{
+    background-image:url(../img/white_facebook.png);
+    &:hover{ background-image:url(../img/facebook.png) };
+  }
+  .smedia.twtr{
+    background-image:url(../img/white_twitter.png);
+    &:hover{ background-image:url(../img/twitter.png) };
+  }
+  .smedia.sptf{
+    background-image:url(../img/white_spotify.png);
+    &:hover{ background-image:url(../img/spotify.png) };
+  }
+  .smedia.rdio{
+    background-image:url(../img/white_rdio.png);
+    &:hover{ background-image:url(../img/rdio.png) };
+  }
+  .smedia.lkdn{
+    background-image:url(../img/white_linkedin.png);
+    &:hover{ background-image:url(../img/linkedin.png) };
+  }
+}

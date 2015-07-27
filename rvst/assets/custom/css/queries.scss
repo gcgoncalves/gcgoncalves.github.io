@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+/*---------------*/
+/*---- HOME -----*/
+/*---------------*/
+.home_body{
+  .header{
+    .logo img{
+      width:100%;
+    }
+  }
+  .main_box{
+    .record img{
+      width:100%;
+    }
+  }
+
+  .smedia{
+    width:48px;
+    height:48px;
+    background-size: 48px 48px;
+    margin:10px;
+  }
+}
+
+}
