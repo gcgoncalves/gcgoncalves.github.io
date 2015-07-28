@@ -13,7 +13,7 @@
 /*---- HOME -----*/
 /*---------------*/
 body {
-  background: #ffeeee; }
+  background: #997788; }
 
 .home_body {
   height: 100%;
@@ -62,6 +62,14 @@ body {
     background-image: url(../img/white_rdio.png); }
     .home_body .smedia.rdio:hover {
       background-image: url(../img/rdio.png); }
+  .home_body .smedia.sndc {
+    background-image: url(../img/white_soundcloud.png); }
+    .home_body .smedia.sndc:hover {
+      background-image: url(../img/soundcloud.png); }
+  .home_body .smedia.utbe {
+    background-image: url(../img/white_youtube.png); }
+    .home_body .smedia.utbe:hover {
+      background-image: url(../img/youtube.png); }
   .home_body .smedia.lkdn {
     background-image: url(../img/white_linkedin.png); }
     .home_body .smedia.lkdn:hover {

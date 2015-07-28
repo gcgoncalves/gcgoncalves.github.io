@@ -14,7 +14,7 @@
 /*---- HOME -----*/
 /*---------------*/
 body{
-  background:#ffeeee;
+  background:#997788;
 }
 
 .home_body{
@@ -83,6 +83,14 @@ body{
   .smedia.rdio{
     background-image:url(../img/white_rdio.png);
     &:hover{ background-image:url(../img/rdio.png) };
+  }
+  .smedia.sndc{
+    background-image:url(../img/white_soundcloud.png);
+    &:hover{ background-image:url(../img/soundcloud.png) };
+  }
+  .smedia.utbe{
+    background-image:url(../img/white_youtube.png);
+    &:hover{ background-image:url(../img/youtube.png) };
   }
   .smedia.lkdn{
     background-image:url(../img/white_linkedin.png);
