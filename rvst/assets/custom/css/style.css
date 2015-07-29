@@ -13,7 +13,15 @@
 /*---- HOME -----*/
 /*---------------*/
 body {
-  background: #997788; }
+  /*background:#997788;*/
+  background: url(../img/bg.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
 
 .home_body {
   height: 100%;
