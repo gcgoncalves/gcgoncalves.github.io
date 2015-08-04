@@ -92,6 +92,7 @@
 .ttw-music-player .rating {
     width: 75px;
     height: 16px;
+    display: none;
 }
 
 .ttw-music-player .rating-star {
@@ -101,12 +102,14 @@
     float: left;
     background: transparent url(../images/rating-off.png) no-repeat center center scroll;
     cursor: pointer;
+    display: none;
 }
 
 .ttw-music-player .rating-star:hover,
 .ttw-music-player .rating-star.on,
 .ttw-music-player .rating-star.hover {
     background: transparent url(../images/rating-on.png) no-repeat center center scroll;
+    display: none;
 }
 
 /** Player **/
@@ -267,7 +270,7 @@
 .ttw-music-player .tracklist .rating {
     margin-left: 10px;
     width: 30px;
-    display: block;
+    display: none;
     position: absolute;
     right: 72px;
     top: 12.5px;
