@@ -18,6 +18,8 @@
         .home_body .main_box .record .overlay .ttw-music-player {
           width: 100%;
           margin: 15px auto; }
+          .home_body .main_box .record .overlay .ttw-music-player .title {
+            width: 100px; }
           .home_body .main_box .record .overlay .ttw-music-player .album-cover {
             float: none;
             margin: 0 auto; }
@@ -28,15 +30,14 @@
             text-align: center; }
             .home_body .main_box .record .overlay .ttw-music-player .track-info .title {
               width: auto; }
+            .home_body .main_box .record .overlay .ttw-music-player .track-info .buy {
+              position: relative;
+              top: 0;
+              float: right; }
           .home_body .main_box .record .overlay .ttw-music-player .player-controls {
             margin: 12px auto 30px;
             display: block;
             float: none; }
-        .home_body .main_box .record .overlay .title {
-          width: 100px; }
-        .home_body .main_box .record .overlay .buy {
-          position: relative;
-          top: 0; }
   .home_body .smedia {
     width: 48px;
     height: 48px;
