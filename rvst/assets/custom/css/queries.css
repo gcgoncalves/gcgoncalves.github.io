@@ -3,9 +3,9 @@
   /*---- HOME -----*/
   /*---------------*/
   .home_body .header .logo img {
-    width: 100%; }
+    width: 100% !important; }
   .home_body .main_box {
-    margin-top: 15px; }
+    margin-top: 15px !important; }
     .home_body .main_box .record {
       max-width: 767px !important; }
       .home_body .main_box .record img {
@@ -13,8 +13,8 @@
       .home_body .main_box .record .overlay {
         position: relative !important;
         max-width: 767px !important;
-        opacity: 1;
-        padding: 15px; }
+        opacity: 1 !important;
+        padding: 15px !important; }
   .home_body .smedia {
     width: 48px;
     height: 48px;
