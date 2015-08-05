@@ -5,23 +5,54 @@
 .home_body{
   .header{
     .logo img{
-      width:100% !important;
+      width:100%;
     }
   }
   .main_box{
-    margin-top: 15px !important;
+    margin-top: 15px;
     .record {
-      max-width:767px !important;
+      max-width:767px;
       
       img{
-        width:100% !important;
+        width:100%;
       }
 
       .overlay {
-        position:relative !important;
-        max-width:767px !important;
-        opacity:1 !important;
-        padding: 15px !important;
+        position:relative;
+        max-width:767px;
+        opacity:1;
+        padding: 15px;
+
+        .ttw-music-player { 
+          width: 100%; 
+          margin: 15px auto;
+
+          .album-cover{
+            float: none;
+            margin: 0 auto;
+          }
+
+          .track-info { 
+            display: block;
+            float: none;
+            margin: 10px auto;
+            text-align: center;
+
+            .title { width: auto; }
+          }
+
+          .player-controls {
+            margin: 12px auto 30px;
+            display: block;
+            float: none;
+          }
+        }
+
+        .title { width: 100px; }
+        .buy{
+          position: relative;
+          top: 0;
+        }
       }
     }
   }
