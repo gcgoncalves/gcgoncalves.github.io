@@ -11,23 +11,23 @@
   -webkit-box-sizing:border-box; }
 
 body{
-    margin: 0;
-    padding: 0;
-    border: 0;
+    margin:0;
+    padding:0;
+    border:0;
 }
 
 /*---------------*/
 /*---- HOME -----*/
 /*---------------*/
 body{
-    background: transparent url("../img/bg.jpg") no-repeat scroll top center / cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
+    background:transparent url("../img/bg.jpg") no-repeat scroll top center / cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    -webkit-transform-style:preserve-3d;
+    -moz-transform-style:preserve-3d;
+    transform-style:preserve-3d;
 }
 
 .home_body{
@@ -48,7 +48,7 @@ body{
     }
 
     .main_nav {
-      height: 100px;
+      height:100px;
 
       .nav_menu {
         position:relative;
@@ -79,8 +79,8 @@ body{
         height:100%;
         max-width:600px;
         opacity:0;
-        -webkit-transition: opacity .25s ease;
-        -moz-transition: opacity .25s ease;
+        -webkit-transition:opacity .25s ease;
+        -moz-transition:opacity .25s ease;
         
         &:hover{ opacity:1; }
       }
@@ -89,7 +89,11 @@ body{
     }
   }
 
-  .footer_nav{ text-align:center; }
+  .footer_nav{ 
+    text-align:center; 
+    ul { display:inline-table; }
+    ul li { display:inline; }
+  }
 
   .smedia{
     width:64px;

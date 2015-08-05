@@ -70,6 +70,10 @@ body {
         opacity: 1; }
   .home_body .footer_nav {
     text-align: center; }
+    .home_body .footer_nav ul {
+      display: inline-table; }
+    .home_body .footer_nav ul li {
+      display: inline; }
   .home_body .smedia {
     width: 64px;
     height: 64px;
