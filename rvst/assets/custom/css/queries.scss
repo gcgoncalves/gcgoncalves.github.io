@@ -9,11 +9,19 @@
     }
   }
   .main_box{
+    margin-top: 15px;
     .record {
       max-width:767px !important;
       
       img{
         width:100% !important;
+      }
+
+      .overlay {
+        position:relative !important;
+        max-width:767px !important;
+        opacity:1;
+        padding: 15px;
       }
     }
   }
