@@ -21,6 +21,7 @@
           .home_body .main_box .record .overlay .ttw-music-player .title {
             width: 100px; }
           .home_body .main_box .record .overlay .ttw-music-player .album-cover {
+            display: none;
             float: none;
             margin: 0 auto; }
           .home_body .main_box .record .overlay .ttw-music-player .track-info {
