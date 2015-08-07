@@ -19,6 +19,7 @@
     <script type="text/javascript" src="assets/plugin/ttw-music-player-min.js"></script>
     <script type="text/javascript" src="assets/custom/js/playlist.js"></script>
     <script type="text/javascript" src="assets/custom/js/player.js"></script>
+    <script type="text/javascript" src="assets/custom/js/custom.js"></script>
     <link rel="stylesheet" href="assets/plugin/css/style.css" />
 
 </head>
@@ -31,7 +32,7 @@
                 </h1>
             </div>
             <div class="main_nav hidden-xs hidden-sm col-md-8">
-                <ul class="nav nav_menu nav-pills col-xs-12">
+                <ul class="nav nav_menu nav-pills col-xs-10">
                     <li><a class="smedia fcbk" href="#"></a></li>
                     <li><a class="smedia twtr" href="#"></a></li>
                     <li><a class="smedia sptf" href="#"></a></li>
@@ -39,9 +40,29 @@
                     <li><a class="smedia sndc" href="#"></a></li>
                     <li><a class="smedia utbe" href="#"></a></li>
                 </ul>
+                <div class="col-xs-2 form-group" style="height:100px;">
+                    <select class="bg-selector form-control" style="position:relative; top:50%; transform:translateY(-50%);">
+                        <option value="bg.jpg">Original</option>
+                        <option value="bg_beige.jpg">Beige</option>
+                        <option value="bg_blue.jpg">Blue</option>
+                        <option value="bg_pink.jpg">Pink</option>
+                        <option value="bg_purple.jpg">Purple</option>
+                        <option value="bg_salmon.jpg">Salmon</option>
+                    </select>
+                </div>
             </div>
         </div>
         <div class="main_box col-xs-12 col-md-offset-2">
+            <div class="col-xs-6 form-group">
+                <select class="bg-selector visible-xs-block visible-sm-block form-control">
+                    <option value="bg.jpg">Original</option>
+                    <option value="bg_beige.jpg">Beige</option>
+                    <option value="bg_blue.jpg">Blue</option>
+                    <option value="bg_pink.jpg">Pink</option>
+                    <option value="bg_purple.jpg">Purple</option>
+                    <option value="bg_salmon.jpg">Salmon</option>
+                </select>
+            </div>
             <div class="record">
                 <img src="assets/custom/img/rvst.jpg" alt="Rust - Failing Together" />
                 <div class="overlay" id="player_holder">
