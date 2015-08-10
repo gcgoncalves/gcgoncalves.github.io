@@ -60,7 +60,7 @@ body{
   }
 
   .main_box {
-    padding-top:20px;
+    padding:20px;
 
     .record{
       position:relative;
@@ -91,6 +91,8 @@ body{
   }
 
   .footer_nav{ 
+    background:#151515;
+    margin-top:20px;
     text-align:center; 
     ul { display:inline-table; }
     ul li { display:inline; }

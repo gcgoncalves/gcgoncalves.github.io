@@ -47,7 +47,7 @@ body {
         top: 50%;
         transform: translateY(-50%); }
   .home_body .main_box {
-    padding-top: 20px; }
+    padding: 20px; }
     .home_body .main_box .record {
       position: relative;
       width: 100%;
@@ -70,6 +70,8 @@ body {
       .home_body .main_box .record .lock {
         opacity: 1; }
   .home_body .footer_nav {
+    background: #151515;
+    margin-top: 20px;
     text-align: center; }
     .home_body .footer_nav ul {
       display: inline-table; }
