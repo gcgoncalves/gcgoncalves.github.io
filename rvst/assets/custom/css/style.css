@@ -18,7 +18,7 @@ body {
 /*---- HOME -----*/
 /*---------------*/
 body {
-  background: transparent url("../img/bg.jpg") no-repeat scroll top center/cover;
+  background: url("../img/bg_salmon.jpg") fixed 50%/cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -32,7 +32,8 @@ body {
   margin: 0px;
   padding: 0px; }
   .home_body .header {
-    display: inline-flex; }
+    display: inline-flex;
+    background: #151515; }
     .home_body .header .logo {
       margin: 0;
       padding: 0; }
