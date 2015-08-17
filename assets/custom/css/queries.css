@@ -2,13 +2,13 @@
   /*---------------*/
   /*---- HOME -----*/
   /*---------------*/
-  .home_body {
+  .home-body {
     /*.btn { width: 150px !important; }*/ }
-    .home_body .main_box h1 {
+    .home-body .main-box h1 {
       font-size: 24px !important; }
-      .home_body .main_box h1 .glyphicon {
+      .home-body .main-box h1 .glyphicon {
         font-size: 20px !important; }
-    .home_body .main_box .main_nav .nav_menu li {
+    .home-body .main-box .content-box .nav-menu li {
       display: list-item !important;
       margin: 15px !important; } }
 

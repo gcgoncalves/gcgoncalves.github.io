@@ -53,11 +53,11 @@ body{
     transform-style: preserve-3d;
 }
 
-.home_body{
+.home-body{
     display: block;
     height: 100%;
     
-    .main_box {
+    .main-box {
         text-align: center;
         position: relative;
         top: 50%;
@@ -73,7 +73,7 @@ body{
             .glyphicon { font-size: 52px; }
         }
 
-        .main_nav {
+        .content-box {
             background-color: rgba(222,222,222,0.5);
             border-radius: 5px;
             border: 1px solid #333;
@@ -83,7 +83,7 @@ body{
             
             a{ color: #555; }
 
-            .nav_menu {
+            .nav-menu {
                 display:inline-block;
                 vertical-align:middle;
                 list-style: none;

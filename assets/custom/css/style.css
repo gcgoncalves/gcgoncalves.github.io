@@ -40,10 +40,10 @@ body {
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d; }
 
-.home_body {
+.home-body {
   display: block;
   height: 100%; }
-  .home_body .main_box {
+  .home-body .main-box {
     text-align: center;
     position: relative;
     top: 50%;
@@ -51,34 +51,34 @@ body {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     color: #333; }
-    .home_body .main_box h1 {
+    .home-body .main-box h1 {
       font-family: 'agitpropmedium';
       font-size: 78px; }
-      .home_body .main_box h1 .glyphicon {
+      .home-body .main-box h1 .glyphicon {
         font-size: 52px; }
-    .home_body .main_box .main_nav {
+    .home-body .main-box .content-box {
       background-color: rgba(222, 222, 222, 0.5);
       border-radius: 5px;
       border: 1px solid #333;
       text-align: center;
       position: relative;
       float: none; }
-      .home_body .main_box .main_nav a {
+      .home-body .main-box .content-box a {
         color: #555; }
-      .home_body .main_box .main_nav .nav_menu {
+      .home-body .main-box .content-box .nav-menu {
         display: inline-block;
         vertical-align: middle;
         list-style: none;
         margin: 15px auto;
         float: none;
         text-align: center; }
-        .home_body .main_box .main_nav .nav_menu li {
+        .home-body .main-box .content-box .nav-menu li {
           display: inline-block;
           float: none; }
-  .home_body .btn {
+  .home-body .btn {
     border: 1px solid #333;
     background: rgba(222, 222, 222, 0.5); }
-  .home_body .btn:hover {
+  .home-body .btn:hover {
     background: rgba(188, 188, 188, 0.5); }
 
 /*# sourceMappingURL=style.css.map */
