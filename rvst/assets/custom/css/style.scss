@@ -102,55 +102,41 @@ body{
   .smedia{
     width:64px;
     height:64px;
+    background-size: 64px 64px;
     margin:10px;
-  }
-  .smedia.fcbk{
-    background-image:url(../img/facebook.png);
-    &:hover{ 
-      background-image:url(../img/white_facebook.png);
-      background-color:#4d67a3;
-     }
-  }
-  .smedia.twtr{
-    background-image:url(../img/twitter.png);
-    &:hover{ 
-      background-image:url(../img/white_twitter.png);
-      background-color:#25a7df; 
+    background-color: rgba(0, 0, 0, 0);
+    
+    &.fcbk{
+      background-image:url(../img/fb.png);
+    }
+    &.twtr{
+      background-image:url(../img/twitter.png);
+    }
+    &.sptf{
+      background-image:url(../img/sp.png);
+    }
+    &.rdio{
+      background-image:url(../img/rdio.png);
+    }
+    &.sndc{
+      background-image:url(../img/soundcloud.png);
+    }
+    &.utbe{
+      background-image:url(../img/yt.png);
+    }
+    &.bcmp{
+      width:145px;
+      height:64px;
+      background-size: 145px 64px;
+      background-image:url(../img/bc.png);
+    }
+    .smedia.lkdn{
+      background-image:url(../img/linkedin.png);
+    }
+    
+    &:hover {
+      background-color: rgba(0, 0, 0, 0);
     }
   }
-  .smedia.sptf{
-    background-image:url(../img/spotify.png);
-    &:hover{ 
-      background-image:url(../img/white_spotify.png);
-      background-color:#66a200; 
-    }
-  }
-  .smedia.rdio{
-    background-image:url(../img/rdio.png);
-    &:hover{ 
-      background-image:url(../img/white_rdio.png);
-      background-color:#396683; 
-    }
-  }
-  .smedia.sndc{
-    background-image:url(../img/soundcloud.png);
-    &:hover{ 
-      background-image:url(../img/white_soundcloud.png);
-      background-color:#ff5c00; 
-    }
-  }
-  .smedia.utbe{
-    background-image:url(../img/youtube.png);
-    &:hover{ 
-      background-image:url(../img/white_youtube.png);
-      background-color:#cc171e; 
-    }
-  }
-  .smedia.lkdn{
-    background-image:url(../img/linkedin.png);
-    &:hover{ 
-      background-image:url(../img/white_linkedin.png);
-      background-color:#0178b5; 
-    }
-  }
+
 }

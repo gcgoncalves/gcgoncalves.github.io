@@ -81,41 +81,29 @@ body {
   .home_body .smedia {
     width: 64px;
     height: 64px;
-    margin: 10px; }
-  .home_body .smedia.fcbk {
-    background-image: url(../img/facebook.png); }
-    .home_body .smedia.fcbk:hover {
-      background-image: url(../img/white_facebook.png);
-      background-color: #4d67a3; }
-  .home_body .smedia.twtr {
-    background-image: url(../img/twitter.png); }
-    .home_body .smedia.twtr:hover {
-      background-image: url(../img/white_twitter.png);
-      background-color: #25a7df; }
-  .home_body .smedia.sptf {
-    background-image: url(../img/spotify.png); }
-    .home_body .smedia.sptf:hover {
-      background-image: url(../img/white_spotify.png);
-      background-color: #66a200; }
-  .home_body .smedia.rdio {
-    background-image: url(../img/rdio.png); }
-    .home_body .smedia.rdio:hover {
-      background-image: url(../img/white_rdio.png);
-      background-color: #396683; }
-  .home_body .smedia.sndc {
-    background-image: url(../img/soundcloud.png); }
-    .home_body .smedia.sndc:hover {
-      background-image: url(../img/white_soundcloud.png);
-      background-color: #ff5c00; }
-  .home_body .smedia.utbe {
-    background-image: url(../img/youtube.png); }
-    .home_body .smedia.utbe:hover {
-      background-image: url(../img/white_youtube.png);
-      background-color: #cc171e; }
-  .home_body .smedia.lkdn {
-    background-image: url(../img/linkedin.png); }
-    .home_body .smedia.lkdn:hover {
-      background-image: url(../img/white_linkedin.png);
-      background-color: #0178b5; }
+    background-size: 64px 64px;
+    margin: 10px;
+    background-color: transparent; }
+    .home_body .smedia.fcbk {
+      background-image: url(../img/fb.png); }
+    .home_body .smedia.twtr {
+      background-image: url(../img/twitter.png); }
+    .home_body .smedia.sptf {
+      background-image: url(../img/sp.png); }
+    .home_body .smedia.rdio {
+      background-image: url(../img/rdio.png); }
+    .home_body .smedia.sndc {
+      background-image: url(../img/soundcloud.png); }
+    .home_body .smedia.utbe {
+      background-image: url(../img/yt.png); }
+    .home_body .smedia.bcmp {
+      width: 145px;
+      height: 64px;
+      background-size: 145px 64px;
+      background-image: url(../img/bc.png); }
+    .home_body .smedia .smedia.lkdn {
+      background-image: url(../img/linkedin.png); }
+    .home_body .smedia:hover {
+      background-color: transparent; }
 
 /*# sourceMappingURL=style.css.map */
