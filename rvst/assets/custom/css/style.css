@@ -85,22 +85,22 @@ body {
     margin: 10px;
     background-color: transparent; }
     .home_body .smedia.fcbk {
-      background-image: url(../img/fb.png); }
+      background-image: url(../img/logo_fb.png); }
     .home_body .smedia.twtr {
       background-image: url(../img/twitter.png); }
     .home_body .smedia.sptf {
-      background-image: url(../img/sp.png); }
+      background-image: url(../img/logo_sp.png); }
     .home_body .smedia.rdio {
       background-image: url(../img/rdio.png); }
     .home_body .smedia.sndc {
       background-image: url(../img/soundcloud.png); }
     .home_body .smedia.utbe {
-      background-image: url(../img/yt.png); }
+      background-image: url(../img/logo_yt.png); }
     .home_body .smedia.bcmp {
       width: 145px;
       height: 64px;
       background-size: 145px 64px;
-      background-image: url(../img/bc.png); }
+      background-image: url(../img/logo_bc.png); }
     .home_body .smedia .smedia.lkdn {
       background-image: url(../img/linkedin.png); }
     .home_body .smedia:hover {
