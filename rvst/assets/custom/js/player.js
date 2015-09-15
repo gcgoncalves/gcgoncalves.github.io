@@ -25,7 +25,7 @@ $(document).ready(function(){
         // Show lyrics
         
         //track it as an event with category:jPlayer, action:Play, label:Name of the file being played, value:location on file as %
-        _gaq.push(['_trackEvent', 'jPlayer', 'Play',mediaName,playerTime]);
+        ga('send', 'event', 'jPlayer', 'Play', (mediaName + '@' + playerTime));
     });
     //listener for a pause click
     $(".overlay").bind($.jPlayer.event.pause, function(event) {
@@ -39,7 +39,7 @@ $(document).ready(function(){
         //we don't need that duplication in GA
         if(playerTime<100){
           //tracking the pause with similar setup to the play event
-          _gaq.push(['_trackEvent', 'jPlayer', 'Pause',mediaName,playerTime]);
+          ga('send', 'event', 'jPlayer', 'Pause', (mediaName + '@' + playerTime));
         }
     });
     //listening for the user dragging the seek bar
@@ -48,7 +48,7 @@ $(document).ready(function(){
         var playerTime = Math.round(event.jPlayer.status.currentPercentAbsolute);
         var mediaName = event.jPlayer.status.src;
         //tracking the seeking action similar to above
-        _gaq.push(['_trackEvent', 'jPlayer', 'Seeking',mediaName,playerTime]);
+        ga('send', 'event', 'jPlayer', 'Seeking', (mediaName + '@' + playerTime));
     });
     //listening for when the user has stopped dragging the seek bar
     $(".overlay").bind($.jPlayer.event.seeked, function(event) {
@@ -60,10 +60,10 @@ $(document).ready(function(){
         // then we track it as a stop, if it's greater than 0, it was an actual seek.
         if(playerTime>0){
             //track the seeked event as above
-            _gaq.push(['_trackEvent', 'jPlayer', 'Seeked',mediaName,playerTime]);
+            ga('send', 'event', 'jPlayer', 'Seeked', (mediaName + '@' + playerTime));
         }else{
             //track the stopped event as above
-            _gaq.push(['_trackEvent', 'jPlayer', 'Stopped',mediaName,playerTime]);
+            ga('send', 'event', 'jPlayer', 'Stopped', (mediaName + '@' + playerTime));
         }
     });
     //listening for an end ie file completion
@@ -73,7 +73,7 @@ $(document).ready(function(){
         var playerTime = 100;
         var mediaName = event.jPlayer.status.src;
         //track the End event as above.
-        _gaq.push(['_trackEvent', 'jPlayer', 'Ended',mediaName,playerTime]);
+        ga('send', 'event', 'jPlayer', 'Ended', (mediaName + '@' + playerTime));
     });
 });
 

@@ -100,9 +100,9 @@ body{
   }
 
   .smedia{
-    width:64px;
-    height:64px;
-    background-size: 64px 64px;
+    width:48px;
+    height:48px;
+    background-size: 48px 48px;
     margin:10px;
     background-color: rgba(0, 0, 0, 0);
     
@@ -125,9 +125,9 @@ body{
       background-image:url(../img/logo_yt.png);
     }
     &.bcmp{
-      width:145px;
-      height:64px;
-      background-size: 145px 64px;
+      width:108px;
+      height:48px;
+      background-size: 108px 48px;
       background-image:url(../img/logo_bc.png);
     }
     .smedia.lkdn{

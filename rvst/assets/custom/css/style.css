@@ -79,9 +79,9 @@ body {
     .home_body .footer_nav ul li {
       display: inline; }
   .home_body .smedia {
-    width: 64px;
-    height: 64px;
-    background-size: 64px 64px;
+    width: 48px;
+    height: 48px;
+    background-size: 48px 48px;
     margin: 10px;
     background-color: transparent; }
     .home_body .smedia.fcbk {
@@ -97,9 +97,9 @@ body {
     .home_body .smedia.utbe {
       background-image: url(../img/logo_yt.png); }
     .home_body .smedia.bcmp {
-      width: 145px;
-      height: 64px;
-      background-size: 145px 64px;
+      width: 108px;
+      height: 48px;
+      background-size: 108px 48px;
       background-image: url(../img/logo_bc.png); }
     .home_body .smedia .smedia.lkdn {
       background-image: url(../img/linkedin.png); }
