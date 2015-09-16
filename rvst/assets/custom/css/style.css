@@ -1,4 +1,7 @@
 /*---------------*/
+/*-- VARIABLES --*/
+/*---------------*/
+/*---------------*/
 /*---- RESETS ---*/
 /*---------------*/
 * {
@@ -25,7 +28,8 @@ body {
   background-size: cover;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d; }
+  transform-style: preserve-3d;
+  color: #EEE; }
 
 .home_body {
   height: 100%;
@@ -46,6 +50,18 @@ body {
         position: relative;
         top: 50%;
         transform: translateY(-50%); }
+    .home_body .header .btn_pill {
+      border: 1px solid #EEE;
+      background-color: #151515;
+      margin-top: 10px;
+      border-radius: 20px; }
+      .home_body .header .btn_pill .contact {
+        cursor: pointer; }
+    .home_body .header #release > .lang-selector {
+      display: none; }
+    .home_body .header a {
+      color: #EEE;
+      text-decoration: none; }
   .home_body .main_box {
     padding: 20px; }
     .home_body .main_box .record {
