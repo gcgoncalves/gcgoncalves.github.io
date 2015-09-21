@@ -49,6 +49,7 @@ body{
     .logo{
       margin:0;
       padding:0;
+      min-width: 400px;
       h1 {
         margin:0;
         padding:0;
@@ -148,6 +149,9 @@ body{
     }
     &.utbe{
       background-image:url(../img/logo_yt.png);
+    }
+    &.itns{
+      background-image:url(../img/logo_it.png);
     }
     &.bcmp{
       width:108px;

@@ -40,7 +40,8 @@ body {
     background: #151515; }
     .home_body .header .logo {
       margin: 0;
-      padding: 0; }
+      padding: 0;
+      min-width: 400px; }
       .home_body .header .logo h1 {
         margin: 0;
         padding: 0; }
@@ -112,6 +113,8 @@ body {
       background-image: url(../img/soundcloud.png); }
     .home_body .smedia.utbe {
       background-image: url(../img/logo_yt.png); }
+    .home_body .smedia.itns {
+      background-image: url(../img/logo_it.png); }
     .home_body .smedia.bcmp {
       width: 108px;
       height: 48px;
