@@ -10,4 +10,22 @@ $(document).ready(function(){
     $('.release-label').show();
     $('.lang-selector').hide();
   });
+  
+  $('#release-pt').click(function(){
+    $('.release_img.en').hide();
+    $('.release_box').show();
+    $('.release_img.pt').show();
+    $('.home_body').addClass('noscroll');
+  });
+  $('#release-en').click(function(){
+    $('.release_img.pt').hide();
+    $('.release_box').show();
+    $('.release_img.en').show();
+    $('.home_body').addClass('noscroll');
+  });
+  $('.release_box').click(function(){
+    $('.release_box').hide();
+    $('.release_img').hide();
+    $('.home_body').removeClass('noscroll');
+  });
 });
