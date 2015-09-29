@@ -35,6 +35,11 @@ body{
   -moz-transform-style:preserve-3d;
   transform-style:preserve-3d;
   color: $white;
+    
+  &.noscroll{
+    position:fixed;
+    overflow: hidden;
+  }
 }
 
 .home_body{
@@ -62,6 +67,10 @@ body{
       .nav_menu {
         position:relative;
         top:50%;
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
         transform:translateY(-50%);
       }
     }
@@ -69,15 +78,30 @@ body{
     .btn_pill{
       border: 1px solid $white;
       background-color: #151515;
+      color: $white;
+      font-size: 14px;
+      font-weight: 400;
+      min-width: 165px;
       margin-top: 10px;
       border-radius:20px;
+      display: inline-block;
+      line-height: 1.42857;
+      margin-bottom: 0;
+      padding: 6px 12px;
+      text-align: center;
+      vertical-align: middle;
+      white-space: nowrap;
       
-      .contact {
-        cursor: pointer;
+      &.contact {
+        cursor: text;
       }
     }
     
     #release > .lang-selector{ display: none; }
+    
+    .contact{
+        .contact-email { display:none; }
+    }
         
     a {
       color: $white;
@@ -167,10 +191,6 @@ body{
       background-color: rgba(0, 0, 0, 0);
     }
   }
-    
-    &.noscroll{
-      position:fixed;
-    }
 }
   
     .release_box{

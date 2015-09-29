@@ -2,52 +2,47 @@
   /*---------------*/
   /*---- HOME -----*/
   /*---------------*/
-  .home_body .header .logo img {
-    width: 100%; }
   .home_body .main_box {
     margin-top: 15px; }
-    .home_body .main_box .record {
-      max-width: 767px; }
-      .home_body .main_box .record img {
-        width: 100%; }
-      .home_body .main_box .record .overlay {
-        position: relative;
-        max-width: 767px;
-        opacity: 1;
-        padding: 15px; }
-        .home_body .main_box .record .overlay .ttw-music-player {
-          width: 100%;
-          margin: 15px auto; }
-          .home_body .main_box .record .overlay .ttw-music-player .title {
-            width: 100px; }
-          .home_body .main_box .record .overlay .ttw-music-player .album-cover {
-            display: none;
-            float: none;
-            margin: 0 auto; }
-          .home_body .main_box .record .overlay .ttw-music-player .track-info {
-            display: block;
-            float: none;
-            margin: 10px auto;
-            text-align: center; }
-            .home_body .main_box .record .overlay .ttw-music-player .track-info .title {
-              width: auto; }
-            .home_body .main_box .record .overlay .ttw-music-player .track-info .buy {
-              position: relative;
-              top: 0;
-              float: right; }
-          .home_body .main_box .record .overlay .ttw-music-player .player-controls {
-            margin: 12px auto 30px;
-            display: block;
-            float: none; }
+    .home_body .main_box .record img {
+      width: 100%; }
+    .home_body .main_box .record .overlay {
+      position: relative;
+      opacity: 1;
+      padding: 15px; }
+      .home_body .main_box .record .overlay .ttw-music-player {
+        width: 100%;
+        margin: 15px auto; }
+        .home_body .main_box .record .overlay .ttw-music-player .title {
+          width: 100px; }
+        .home_body .main_box .record .overlay .ttw-music-player .album-cover {
+          display: none;
+          float: none;
+          margin: 0 auto; }
+        .home_body .main_box .record .overlay .ttw-music-player .track-info {
+          display: block;
+          float: none;
+          margin: 10px auto;
+          text-align: center; }
+          .home_body .main_box .record .overlay .ttw-music-player .track-info .title {
+            width: auto; }
+          .home_body .main_box .record .overlay .ttw-music-player .track-info .buy {
+            position: relative;
+            top: 0;
+            float: right; }
+        .home_body .main_box .record .overlay .ttw-music-player .player-controls {
+          margin: 12px auto 30px;
+          display: block;
+          float: none; }
   .home_body .smedia {
-    width: 48px;
-    height: 48px;
-    background-size: 48px 48px;
+    width: 36px;
+    height: 36px;
+    background-size: 36px 36px;
     margin: 10px 5px; }
   .home_body .smedia.bcmp {
-    width: 108px;
-    height: 48px;
-    background-size: 108px 48px;
+    width: 81px;
+    height: 36px;
+    background-size: 81px 36px;
     background-image: url(../img/logo_bc.png); } }
 
 /*# sourceMappingURL=queries.css.map */

@@ -3,23 +3,15 @@
 /*---- HOME -----*/
 /*---------------*/
 .home_body{
-  .header{
-    .logo img{
-      width:100%;
-    }
-  }
   .main_box{
     margin-top: 15px;
     .record {
-      max-width:767px;
-      
       img{
         width:100%;
       }
 
       .overlay {
         position:relative;
-        max-width:767px;
         opacity:1;
         padding: 15px;
 
@@ -61,15 +53,15 @@
   }
 
   .smedia{
-    width:48px;
-    height:48px;
-    background-size: 48px 48px;
+    width:36px;
+    height:36px;
+    background-size: 36px 36px;
     margin:10px 5px;
   }
   .smedia.bcmp{
-        width:108px;
-        height:48px;
-        background-size: 108px 48px;
+        width:81px;
+        height:36px;
+        background-size: 81px 36px;
         background-image:url(../img/logo_bc.png);
       }
 }
