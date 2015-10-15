@@ -48,6 +48,21 @@
             float: none;
           }
         }
+        
+        
+        .download {
+          position: relative;
+          text-align: center;
+          margin: 0 auto;  
+          left: 0;
+          top: 0;
+          
+          img { 
+            width: 100%; 
+            max-width: 300px;
+            margin: 0 auto;  
+          }
+        }
       }
     }
   }

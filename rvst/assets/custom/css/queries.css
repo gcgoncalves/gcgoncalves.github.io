@@ -34,6 +34,16 @@
           margin: 12px auto 30px;
           display: block;
           float: none; }
+      .home_body .main_box .record .overlay .download {
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        left: 0;
+        top: 0; }
+        .home_body .main_box .record .overlay .download img {
+          width: 100%;
+          max-width: 300px;
+          margin: 0 auto; }
   .home_body .smedia {
     width: 36px;
     height: 36px;

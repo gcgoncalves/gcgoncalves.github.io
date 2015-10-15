@@ -105,6 +105,15 @@ body {
         -moz-transition: opacity .25s ease; }
         .home_body .main_box .record .overlay:hover {
           opacity: 1; }
+        .home_body .main_box .record .overlay .download {
+          position: absolute;
+          left: 215px;
+          top: 440px;
+          width: 170px; }
+          .home_body .main_box .record .overlay .download img {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto; }
       .home_body .main_box .record .lock {
         opacity: 1; }
   .home_body .footer_nav {

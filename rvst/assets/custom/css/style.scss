@@ -135,6 +135,19 @@ body{
         -moz-transition:opacity .25s ease;
         
         &:hover{ opacity:1; }
+        
+        .download {
+          position: absolute;
+          left: 215px;
+          top: 440px;
+          width: 170px;
+          
+          img { 
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;  
+          }
+        }
       }
 
       .lock{ opacity:1; }

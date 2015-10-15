@@ -2,7 +2,7 @@ $(document).ready(function(){
   //var description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id tortor nisi. Aenean sodales diam ac lacus elementum scelerisque. Suspendisse a dui vitae lacus faucibus venenatis vel id nisl. Proin orci ante, ultricies nec interdum at, iaculis venenatis nulla. ';
 
   //Initialize the plugin
-  $('.overlay').ttwMusicPlayer(playlist, {
+  $('#player_holder').ttwMusicPlayer(playlist, {
     //description:description,
     currencySymbol:'$',
     buyText:'BUY',
@@ -13,14 +13,14 @@ $(document).ready(function(){
     }
   });
 
-    $(".overlay").bind($.jPlayer.event.play, function(event) {
+    $("#player_holder").bind($.jPlayer.event.play, function(event) {
         //playerTime grabs the current % location on the file being played.
         //if they're at the beginning it's 0. If they're at the end it's 100. Etc.
          var playerTime = Math.round(event.jPlayer.status.currentPercentAbsolute);
         //grabs the media currently being played. Usefull for when multiple files are played in the player.
         var mediaName = event.jPlayer.status.src;
         
-        $('.overlay').toggleClass('lock');
+        $('.overlay').addClass('lock');
         
         // Show lyrics
         
@@ -28,12 +28,12 @@ $(document).ready(function(){
         ga('send', 'event', 'jPlayer', 'Play', (mediaName + '@' + playerTime));
     });
     //listener for a pause click
-    $(".overlay").bind($.jPlayer.event.pause, function(event) {
+    $("#player_holder").bind($.jPlayer.event.pause, function(event) {
         //as above, grabbing the % location and media being played
         var playerTime = Math.round(event.jPlayer.status.currentPercentAbsolute);
         var mediaName = event.jPlayer.status.src;
               
-        $('.overlay').toggleClass('lock');
+        $('.overlay').removeClass('lock');
         //We'll only track the "pause" if the percent value is less than 100. This is because at 100%
         //when the player ends, it will send a pause event with the end event.
         //we don't need that duplication in GA
@@ -43,7 +43,7 @@ $(document).ready(function(){
         }
     });
     //listening for the user dragging the seek bar
-    $(".overlay").bind($.jPlayer.event.seeking, function(event) {
+    $("#player_holder").bind($.jPlayer.event.seeking, function(event) {
         //as above, grabbing the % location and media being played
         var playerTime = Math.round(event.jPlayer.status.currentPercentAbsolute);
         var mediaName = event.jPlayer.status.src;
@@ -51,7 +51,7 @@ $(document).ready(function(){
         ga('send', 'event', 'jPlayer', 'Seeking', (mediaName + '@' + playerTime));
     });
     //listening for when the user has stopped dragging the seek bar
-    $(".overlay").bind($.jPlayer.event.seeked, function(event) {
+    $("#player_holder").bind($.jPlayer.event.seeked, function(event) {
         //as above, grabbing the % location and media being played
         var playerTime = Math.round(event.jPlayer.status.currentPercentAbsolute);
         var mediaName = event.jPlayer.status.src;
@@ -67,7 +67,7 @@ $(document).ready(function(){
         }
     });
     //listening for an end ie file completion
-    $(".overlay").bind($.jPlayer.event.ended, function(event) {
+    $("#player_holder").bind($.jPlayer.event.ended, function(event) {
         //as above, grabbing the % location and media being played
         //except when it ends we force the value as 100%, otherwise it shoots back as 0
         var playerTime = 100;
