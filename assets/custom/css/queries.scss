@@ -5,15 +5,16 @@
 .home-body{
     .main-box {
         h1 {
-            font-size: 24px !important;
+            font-size: 24px;
 
-            .glyphicon { font-size: 20px !important; }
+            .glyphicon { font-size: 20px; }
         }
         .content-box {
             .nav-menu {
+                padding: 0px;
                 li { 
-                	display: list-item !important;
-                    margin: 15px !important;
+                	display: inline-block;
+                    margin: 15px;
                 }
             }
         }
