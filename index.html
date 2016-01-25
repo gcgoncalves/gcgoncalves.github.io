@@ -2,10 +2,15 @@
 <html>
 <head>
   <title>Gabriel Costa</title>
-
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <base href="/">
 
   <link rel="stylesheet" href="assets/framework/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="assets/custom/css/style.css" />
+  <link rel="stylesheet" href="assets/custom/css/queries.css" />
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Latest compiled Bootstrap JavaScript -->
@@ -16,13 +21,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
 
   <script src="app/portifolio.js"></script>
-  
-  <link rel="stylesheet" href="assets/custom/css/style.css" />
-  <link rel="stylesheet" href="assets/custom/css/queries.css" />
 </head>
 <body data-ng-app="portifolioApp">
   <div class="home-body col-md-12">
-    <div class="main-box" data-ng-view>
+    <div class="main-box">
+      <div class="content-box col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2" data-ng-view>
+      </div>
     </div>
   </div>
 </body>

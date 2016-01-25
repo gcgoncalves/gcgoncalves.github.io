@@ -4,6 +4,10 @@
 /*---------------*/
 .home-body{
     .main-box {
+        -webkit-transform: translateY(10%);
+        -ms-transform: translateY(10%);
+        transform: translateY(10%);
+
         h1 {
             font-size: 24px;
 

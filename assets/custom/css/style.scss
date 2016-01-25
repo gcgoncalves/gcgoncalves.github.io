@@ -43,7 +43,7 @@ body{
 /*---- HOME -----*/
 /*---------------*/
 body{
-    background: url(../img/home_bg.jpg) no-repeat center;
+    background: url(../img/home_bg.jpg)  no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -61,9 +61,9 @@ body{
         text-align: center;
         position: relative;
         top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+        -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        transform: translateY(50%);
         color: #333;
 
         h1 {

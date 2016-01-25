@@ -4,14 +4,18 @@
   /*---------------*/
   .home-body {
     /*.btn { width: 150px !important; }*/ }
-    .home-body .main-box h1 {
-      font-size: 24px; }
-      .home-body .main-box h1 .glyphicon {
-        font-size: 20px; }
-    .home-body .main-box .content-box .nav-menu {
-      padding: 0px; }
-      .home-body .main-box .content-box .nav-menu li {
-        display: inline-block;
-        margin: 15px; } }
+    .home-body .main-box {
+      -webkit-transform: translateY(10%);
+      -ms-transform: translateY(10%);
+      transform: translateY(10%); }
+      .home-body .main-box h1 {
+        font-size: 24px; }
+        .home-body .main-box h1 .glyphicon {
+          font-size: 20px; }
+      .home-body .main-box .content-box .nav-menu {
+        padding: 0px; }
+        .home-body .main-box .content-box .nav-menu li {
+          display: inline-block;
+          margin: 15px; } }
 
 /*# sourceMappingURL=queries.css.map */
