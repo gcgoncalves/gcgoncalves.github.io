@@ -30,6 +30,9 @@ body {
 /*---------------*/
 /*---- HOME -----*/
 /*---------------*/
+html, body {
+  min-height: 100%; }
+
 body {
   background: url(../img/home_bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
