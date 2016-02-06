@@ -5,9 +5,11 @@
   .home-body {
     /*.btn { width: 150px !important; }*/ }
     .home-body .main-box {
-      -webkit-transform: translateY(10%);
+      top: 20px;
+      /*-webkit-transform: translateY(10%);
       -ms-transform: translateY(10%);
-      transform: translateY(10%); }
+      transform: translateY(10%);*/
+      margin-bottom: 20px; }
       .home-body .main-box h1 {
         font-size: 24px; }
         .home-body .main-box h1 .glyphicon {
