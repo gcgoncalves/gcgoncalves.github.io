@@ -1,13 +1,11 @@
 var portifolioApp = angular.module('portifolioApp', ['ngRoute']);
 
-portifolioApp.controller('portifolioController', function ($scope) {});
-
 portifolioApp.config(function ($routeProvider, $locationProvider) {
   $locationProvider.hashPrefix('!');
 
   $routeProvider
   .when('/', {
-    controller: 'portifolioController',
+    controller: 'homeController',
     templateUrl: 'app/views/home.html'
   })
   .when('/portifolio', {
@@ -15,4 +13,25 @@ portifolioApp.config(function ($routeProvider, $locationProvider) {
     templateUrl: 'app/views/portifolio.html'
   })
   .otherwise({redirectTo: '/'});
+});
+
+portifolioApp.controller('homeController', function ($scope) {});
+portifolioApp.controller('portifolioController', function ($scope) {
+  var portifolio = 
+  [
+    {
+      name : "RVST",
+      url : "http://rvstmusic.com/",
+      thumbnail : "assets/custom/img/thumbs/rvst.png"
+    }
+  ];
+  $scope.portifolio = portifolio;
+});
+
+portifolioApp.directive('portifolioItem', function () {
+  return {
+    scope: '=portifolioItem',
+    restrict: 'EA',
+    templateUrl: 'app/views/portifolio-item.html'
+    };
 });
