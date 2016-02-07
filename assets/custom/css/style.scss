@@ -76,7 +76,7 @@ body{
         }
 
         .content-box {
-            background-color: rgba(222,222,222,0.5);
+            background-color: rgba(222,222,222,0.6);
             border-radius: 5px;
             border: 1px solid #333;
             text-align: center;
@@ -102,8 +102,11 @@ body{
 
             .portifolio { 
                 .item {
-                    text-align: center;
+                    display: inline-block;
+                    float: left;
                     width: 50%;
+                    margin: 0 auto;
+                    text-align: center;
 
                     a{
                         font-weight: bold;
@@ -115,6 +118,8 @@ body{
                     }
                 }
             }
+
+            .about { text-align: justify; }
         }
     }
 

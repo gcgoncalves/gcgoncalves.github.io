@@ -12,6 +12,10 @@ portifolioApp.config(function ($routeProvider, $locationProvider) {
     controller: 'portifolioController',
     templateUrl: 'app/views/portifolio.html'
   })
+  .when('/about', {
+    controller: 'aboutController',
+    templateUrl: 'app/views/about.html'
+  })
   .otherwise({redirectTo: '/'});
 });
 
@@ -23,10 +27,11 @@ portifolioApp.controller('portifolioController', function ($scope) {
       name : "RVST",
       url : "http://rvstmusic.com/",
       thumbnail : "assets/custom/img/thumbs/rvst.png"
-    }
+    },
   ];
   $scope.portifolio = portifolio;
 });
+portifolioApp.controller('aboutController', function ($scope) {});
 
 portifolioApp.directive('portifolioItem', function () {
   return {

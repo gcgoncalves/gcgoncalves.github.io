@@ -61,7 +61,7 @@ body {
       .home-body .main-box h1 .glyphicon {
         font-size: 52px; }
     .home-body .main-box .content-box {
-      background-color: rgba(222, 222, 222, 0.5);
+      background-color: rgba(222, 222, 222, 0.6);
       border-radius: 5px;
       border: 1px solid #333;
       text-align: center;
@@ -82,13 +82,18 @@ body {
           display: inline-block;
           float: none; }
       .home-body .main-box .content-box .portifolio .item {
-        text-align: center;
-        width: 50%; }
+        display: inline-block;
+        float: left;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center; }
         .home-body .main-box .content-box .portifolio .item a {
           font-weight: bold; }
         .home-body .main-box .content-box .portifolio .item img {
           margin: 20px auto;
           max-width: 100%; }
+      .home-body .main-box .content-box .about {
+        text-align: justify; }
   .home-body .btn {
     border: 1px solid #333;
     background: rgba(222, 222, 222, 0.5); }
