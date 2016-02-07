@@ -103,14 +103,12 @@ body{
             .portifolio { 
                 .item {
                     display: inline-block;
-                    float: left;
+                    /* float: left; */
                     width: 50%;
                     margin: 0 auto;
                     text-align: center;
 
-                    a{
-                        font-weight: bold;
-                    }
+                    a{ font-weight: bold; }
 
                     img {
                         margin: 20px auto;

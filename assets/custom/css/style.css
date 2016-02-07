@@ -83,7 +83,7 @@ body {
           float: none; }
       .home-body .main-box .content-box .portifolio .item {
         display: inline-block;
-        float: left;
+        /* float: left; */
         width: 50%;
         margin: 0 auto;
         text-align: center; }
