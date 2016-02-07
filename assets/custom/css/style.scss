@@ -61,8 +61,7 @@ body{
     .main-box {
         text-align: center;
         position: relative;
-        top: 100px;
-        margin-bottom: 100px;
+        margin: 100px auto;
         /*top: 50%;
         -webkit-transform: translateY(50%);
         -ms-transform: translateY(50%);
@@ -84,7 +83,8 @@ body{
             position: relative;
             float: none;
             
-            a{ color: #555; }
+            a {color: #333;}
+            a .btn{ color: #555; }
 
             .nav-menu {
                 display:inline-block;
@@ -97,6 +97,22 @@ body{
                 li { 
                     display: inline-block;
                     float: none;
+                }
+            }
+
+            .portifolio { 
+                .item {
+                    text-align: center;
+                    width: 50%;
+
+                    a{
+                        font-weight: bold;
+                    }
+
+                    img {
+                        margin: 20px auto;
+                        max-width: 100%;
+                    }
                 }
             }
         }
