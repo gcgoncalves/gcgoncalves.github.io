@@ -81,15 +81,15 @@ body {
         .home-body .main-box .content-box .nav-menu li {
           display: inline-block;
           float: none; }
-      .home-body .main-box .content-box .portifolio .item {
+      .home-body .main-box .content-box .portfolio .item {
         display: inline-block;
         /* float: left; */
         width: 50%;
         margin: 0 auto;
         text-align: center; }
-        .home-body .main-box .content-box .portifolio .item a {
+        .home-body .main-box .content-box .portfolio .item a {
           font-weight: bold; }
-        .home-body .main-box .content-box .portifolio .item img {
+        .home-body .main-box .content-box .portfolio .item img {
           margin: 20px auto;
           max-width: 100%; }
       .home-body .main-box .content-box .about {
