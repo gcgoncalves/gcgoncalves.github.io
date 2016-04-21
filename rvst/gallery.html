@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/custom/css/style.css" />
     <link rel="stylesheet" href="assets/custom/css/queries.css" />
 
-    <script type="text/javascript">
+    <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -25,21 +25,36 @@
     
     </script>
     
-    <!-- Player -->
-    <script type="text/javascript" src="assets/plugin/jquery-jplayer/jquery.jplayer.js"></script>
-    <script type="text/javascript" src="assets/plugin/ttw-music-player-min.js"></script>
-    <script type="text/javascript" src="assets/custom/js/playlist.js"></script>
-    <script type="text/javascript" src="assets/custom/js/player.js"></script>
-    <script type="text/javascript" src="assets/custom/js/custom.js"></script>
+    <!-- Gallery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.js"></script>
+    <script type="text/javascript" src="assets/plugin/camera/camera.js"></script>
     <link rel="stylesheet" href="assets/plugin/css/style.css" />
+    <link rel="stylesheet" href="assets/plugin/css/camera.css" />
 
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#camera-wrap').camera({
+                height: '400px',
+                pagination: false,
+                thumbnails: true,
+                overlayer: false,
+                portrait: true,
+                slideOn: 'next',
+                fx:'scrollLeft'
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="home_body col-xs-12">
         <div class="header col-xs-12">
             <div class="logo col-xs-12 col-md-4 col">
                 <h1>
-                    <img class="hidden-xs hidden-sm" src="assets/custom/img/rvst.png" alt="RUST" />
+                    <a href="/" onclick="ga('send', 'event', 'link', 'click', 'home');">
+                        <img class="hidden-xs hidden-sm" src="assets/custom/img/rvst.png" alt="RUST" />
+                    </a>
                 </h1>
             </div>
             <div class="main_nav hidden-xs hidden-sm col-md-6">
@@ -69,17 +84,35 @@
             </div>
         </div>
         <div class="main_box col-xs-12">
-            <div class="record">
-                <img src="assets/custom/img/rvst.jpg" alt="Rust - Fail Together" />
-                <div class="overlay">
-                  <div  id="player_holder"></div>
-                  <div class="download">
-                    <a href="assets/custom/music/RVST - Fail Together (EP, 2015).zip" alt="Download here" onclick="ga('send', 'event', 'link', 'click', 'download');">
-                      <img src="assets/custom/img/download_here.jpg" />
-                    </a>
-                  </div>
-                </div>
-            </div>
+            
+
+        <!-- CODIGO AQUI -->
+        
+        <div id="camera-wrap" class="camera_black_skin">
+            <div data-src="assets/custom/img/carousel/flyer_RVST_Dogstock_Arte_by_Ruben_Braccini.jpg" data-thumb="assets/custom/img/carousel/thumbs/flyer_RVST_Dogstock_Arte_by_Ruben_Braccini_thumb.jpg"></div>
+            <div data-src="assets/custom/img/carousel/flyer_RVST_Dogstock_Arte_by_Michelle_Matiotti.jpg" data-thumb="assets/custom/img/carousel/thumbs/flyer_RVST_Dogstock_Arte_by_Michelle_Matiotti_thumb.jpg"></div>
+            <div data-src="assets/custom/img/carousel/flyer_RVST_PREMIERE_FlyerArte_by_Rubben_Braccini.png" data-thumb="assets/custom/img/carousel/thumbs/flyer_RVST_PREMIERE_FlyerArte_by_Rubben_Braccini_thumb.jpg"></div>
+            <div data-src="assets/custom/img/carousel/RVST_ClubSilencio_Foto_by_MicheleMatiotti_2.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_ClubSilencio_Foto_by_MicheleMatiotti_2_thumb.jpg"></div>
+            <div data-src="assets/custom/img/carousel/RVST_ClubSilencio_Foto_by_MicheleMatiotti_3.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_ClubSilencio_Foto_by_MicheleMatiotti_3_thumb.jpg"></div>
+            <div data-src="assets/custom/img/carousel/RVST_ClubSilencio_Foto_by_MicheleMatiotti_4.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_ClubSilencio_Foto_by_MicheleMatiotti_4_thumb.jpg"></div>
+            <div data-src="assets/custom/img/carousel/RVST_ClubSilencio_Foto_by_MicheleMatiotti.JPG" data-thumb="assets/custom/img/carousel/thumbs/RVST_ClubSilencio_Foto_by_MicheleMatiotti_thumb.JPG"></div>
+            <div data-src="assets/custom/img/carousel/RVST_foto_by_JorgeSaBrito.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_foto_by_JorgeSaBrito_thumb.jpg"></div>
+            <div data-src="assets/custom/img/carousel/RVST_Margot_Foto_by_Michelle_Matiotti_2.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_Margot_Foto_by_Michelle_Matiotti_2_thumb.jpg"></div>
+            <div data-src="assets/custom/img/carousel/RVST_Margot_Foto_by_Michelle_Matiotti_3.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_Margot_Foto_by_Michelle_Matiotti_3_thumb.jpg"></div>
+            <div data-src="assets/custom/img/carousel/RVST_Margot_Foto_by_Michelle_Matiotti.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_Margot_Foto_by_Michelle_Matiotti_thumb.jpg"></div>
+            <div data-src="assets/custom/img/carousel/RVST_Margot_foto_by_tamires_rodriguez.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_Margot_foto_by_tamires_rodriguez_thumb.jpg"></div>
+            <div data-src="assets/custom/img/carousel/RVST_RevistaNoize_Foto_by_Ariel_Fagundes.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_RevistaNoize_Foto_by_Ariel_Fagundes_thumb.jpg"></div>
+            <div data-src="assets/custom/img/carousel/RVST_TheatroSaoPedro_foto_by_Carolina_Goes.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_TheatroSaoPedro_foto_by_Carolina_Goes_thumb.jpg"></div>
+            <div data-src="assets/custom/img/carousel/RVST_TSP.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_TSP_thumb.jpg"></div>
+        </div>
+
+
+
+
+
+
+
+
         </div>
         <div class="footer_nav hidden-md hidden-lg col-xs-12">
             <ul class="nav nav_menu nav-pills">
