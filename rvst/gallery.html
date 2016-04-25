@@ -27,11 +27,10 @@
     
     <!-- Gallery -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.js"></script>
-    <script type="text/javascript" src="assets/plugin/camera/camera.js"></script>
+    <!-- fotorama.css & fotorama.js. -->
+    <link  href="assets/plugin/css/fotorama.css" rel="stylesheet">
+    <script src="assets/plugin/fotorama/fotorama.js"></script>
     <link rel="stylesheet" href="assets/plugin/css/style.css" />
-    <link rel="stylesheet" href="assets/plugin/css/camera.css" />
 
     <script type="text/javascript">
         $(document).ready(function(){
@@ -88,22 +87,28 @@
 
         <!-- CODIGO AQUI -->
         
-        <div id="camera-wrap" class="camera_black_skin">
-            <div data-src="assets/custom/img/carousel/flyer_RVST_Dogstock_Arte_by_Ruben_Braccini.jpg" data-thumb="assets/custom/img/carousel/thumbs/flyer_RVST_Dogstock_Arte_by_Ruben_Braccini_thumb.jpg"></div>
-            <div data-src="assets/custom/img/carousel/flyer_RVST_Dogstock_Arte_by_Michelle_Matiotti.jpg" data-thumb="assets/custom/img/carousel/thumbs/flyer_RVST_Dogstock_Arte_by_Michelle_Matiotti_thumb.jpg"></div>
-            <div data-src="assets/custom/img/carousel/flyer_RVST_PREMIERE_FlyerArte_by_Rubben_Braccini.png" data-thumb="assets/custom/img/carousel/thumbs/flyer_RVST_PREMIERE_FlyerArte_by_Rubben_Braccini_thumb.jpg"></div>
-            <div data-src="assets/custom/img/carousel/RVST_ClubSilencio_Foto_by_MicheleMatiotti_2.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_ClubSilencio_Foto_by_MicheleMatiotti_2_thumb.jpg"></div>
-            <div data-src="assets/custom/img/carousel/RVST_ClubSilencio_Foto_by_MicheleMatiotti_3.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_ClubSilencio_Foto_by_MicheleMatiotti_3_thumb.jpg"></div>
-            <div data-src="assets/custom/img/carousel/RVST_ClubSilencio_Foto_by_MicheleMatiotti_4.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_ClubSilencio_Foto_by_MicheleMatiotti_4_thumb.jpg"></div>
-            <div data-src="assets/custom/img/carousel/RVST_ClubSilencio_Foto_by_MicheleMatiotti.JPG" data-thumb="assets/custom/img/carousel/thumbs/RVST_ClubSilencio_Foto_by_MicheleMatiotti_thumb.JPG"></div>
-            <div data-src="assets/custom/img/carousel/RVST_foto_by_JorgeSaBrito.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_foto_by_JorgeSaBrito_thumb.jpg"></div>
-            <div data-src="assets/custom/img/carousel/RVST_Margot_Foto_by_Michelle_Matiotti_2.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_Margot_Foto_by_Michelle_Matiotti_2_thumb.jpg"></div>
-            <div data-src="assets/custom/img/carousel/RVST_Margot_Foto_by_Michelle_Matiotti_3.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_Margot_Foto_by_Michelle_Matiotti_3_thumb.jpg"></div>
-            <div data-src="assets/custom/img/carousel/RVST_Margot_Foto_by_Michelle_Matiotti.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_Margot_Foto_by_Michelle_Matiotti_thumb.jpg"></div>
-            <div data-src="assets/custom/img/carousel/RVST_Margot_foto_by_tamires_rodriguez.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_Margot_foto_by_tamires_rodriguez_thumb.jpg"></div>
-            <div data-src="assets/custom/img/carousel/RVST_RevistaNoize_Foto_by_Ariel_Fagundes.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_RevistaNoize_Foto_by_Ariel_Fagundes_thumb.jpg"></div>
-            <div data-src="assets/custom/img/carousel/RVST_TheatroSaoPedro_foto_by_Carolina_Goes.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_TheatroSaoPedro_foto_by_Carolina_Goes_thumb.jpg"></div>
-            <div data-src="assets/custom/img/carousel/RVST_TSP.jpg" data-thumb="assets/custom/img/carousel/thumbs/RVST_TSP_thumb.jpg"></div>
+        <div class="fotorama" data-nav="thumbs"
+             data-width="100%"
+             data-ratio="750/500"
+             data-minwidth="400"
+             data-maxwidth="1000"
+             data-minheight="300"
+             data-maxheight="100%">
+            <a href="assets/custom/img/carousel/flyer_RVST_Dogstock_Arte_by_Ruben_Braccini.jpg" data-caption="Ruben Braccini"><img src="assets/custom/img/carousel/thumbs/flyer_RVST_Dogstock_Arte_by_Ruben_Braccini_thumb.jpg"></a>
+            <a href="assets/custom/img/carousel/flyer_RVST_Dogstock_Arte_by_Michelle_Matiotti.jpg" data-caption="Michelle Matiotti"><img src="assets/custom/img/carousel/thumbs/flyer_RVST_Dogstock_Arte_by_Michelle_Matiotti_thumb.jpg"></a>
+            <a href="assets/custom/img/carousel/flyer_RVST_PREMIERE_FlyerArte_by_Rubben_Braccini.png" data-caption="Rubben Braccini"><img src="assets/custom/img/carousel/thumbs/flyer_RVST_PREMIERE_FlyerArte_by_Rubben_Braccini_thumb.jpg"></a>
+            <a href="assets/custom/img/carousel/RVST_ClubSilencio_Foto_by_MicheleMatiotti_2.jpg" data-caption="Michele Matiotti"><img src="assets/custom/img/carousel/thumbs/RVST_ClubSilencio_Foto_by_MicheleMatiotti_2_thumb.jpg"></a>
+            <a href="assets/custom/img/carousel/RVST_ClubSilencio_Foto_by_MicheleMatiotti_3.jpg" data-caption="Michele Matiotti"><img src="assets/custom/img/carousel/thumbs/RVST_ClubSilencio_Foto_by_MicheleMatiotti_3_thumb.jpg"></a>
+            <a href="assets/custom/img/carousel/RVST_ClubSilencio_Foto_by_MicheleMatiotti_4.jpg" data-caption="Michele Matiotti"><img src="assets/custom/img/carousel/thumbs/RVST_ClubSilencio_Foto_by_MicheleMatiotti_4_thumb.jpg"></a>
+            <a href="assets/custom/img/carousel/RVST_ClubSilencio_Foto_by_MicheleMatiotti.JPG" data-caption="Michele Matiotti"><img src="assets/custom/img/carousel/thumbs/RVST_ClubSilencio_Foto_by_MicheleMatiotti_thumb.JPG"></a>
+            <a href="assets/custom/img/carousel/RVST_foto_by_JorgeSaBrito.jpg" data-caption="Jorge S&aacute; Brito"><img src="assets/custom/img/carousel/thumbs/RVST_foto_by_JorgeSaBrito_thumb.jpg"></a>
+            <a href="assets/custom/img/carousel/RVST_Margot_Foto_by_Michelle_Matiotti_2.jpg" data-caption="Michelle Matiotti"><img src="assets/custom/img/carousel/thumbs/RVST_Margot_Foto_by_Michelle_Matiotti_2_thumb.jpg"></a>
+            <a href="assets/custom/img/carousel/RVST_Margot_Foto_by_Michelle_Matiotti_3.jpg" data-caption="Michelle Matiotti"><img src="assets/custom/img/carousel/thumbs/RVST_Margot_Foto_by_Michelle_Matiotti_3_thumb.jpg"></a>
+            <a href="assets/custom/img/carousel/RVST_Margot_Foto_by_Michelle_Matiotti.jpg" data-caption="Michelle Matiotti"><img src="assets/custom/img/carousel/thumbs/RVST_Margot_Foto_by_Michelle_Matiotti_thumb.jpg"></a>
+            <a href="assets/custom/img/carousel/RVST_Margot_foto_by_tamires_rodriguez.jpg" data-caption="tamires Rodriguez"><img src="assets/custom/img/carousel/thumbs/RVST_Margot_foto_by_tamires_rodriguez_thumb.jpg"></a>
+            <a href="assets/custom/img/carousel/RVST_RevistaNoize_Foto_by_Ariel_Fagundes.jpg" data-caption="Ariel Fagundes"><img src="assets/custom/img/carousel/thumbs/RVST_RevistaNoize_Foto_by_Ariel_Fagundes_thumb.jpg"></a>
+            <a href="assets/custom/img/carousel/RVST_TheatroSaoPedro_foto_by_Carolina_Goes.jpg" data-caption="Carolina Goes"><img src="assets/custom/img/carousel/thumbs/RVST_TheatroSaoPedro_foto_by_Carolina_Goes_thumb.jpg"></a>
+            <a href="assets/custom/img/carousel/RVST_TSP.jpg"><img src="assets/custom/img/carousel/thumbs/RVST_TSP_thumb.jpg"></a>
         </div>
 
 
