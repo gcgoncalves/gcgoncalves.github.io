@@ -15,12 +15,12 @@ $black: #151515;
   border:0;
   box-sizing:border-box;
   -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box; }
+-webkit-box-sizing:border-box; }
 
 body{
-    margin:0;
-    padding:0;
-    border:0;
+  margin:0;
+  padding:0;
+  border:0;
 }
 
 /*---------------*/
@@ -36,7 +36,7 @@ body{
   -moz-transform-style:preserve-3d;
   transform-style:preserve-3d;
   color: $white;
-    
+
   &.noscroll{
     position:fixed;
     overflow: hidden;
@@ -47,7 +47,7 @@ body{
   height:100%;
   margin:0px;
   padding:0px;
-  
+
   .header{
     display:inline-flex;
     background:$black;
@@ -75,14 +75,13 @@ body{
         transform:translateY(-50%);
       }
     }
-    
+
     .btn_pill{
       border: 1px solid $white;
       background-color: #151515;
       color: $white;
       font-size: 14px;
       font-weight: 400;
-      min-width: 165px;
       margin-top: 10px;
       border-radius:20px;
       display: inline-block;
@@ -92,18 +91,14 @@ body{
       text-align: center;
       vertical-align: middle;
       white-space: nowrap;
-      
-      &.contact {
-        cursor: text;
-      }
     }
-    
+
     #release > .lang-selector{ display: none; }
-    
+
     .contact{
-        .contact-email { display:none; }
+      .contact-email { display:none; }
     }
-        
+
     a {
       color: $white;
       text-decoration: none;
@@ -113,13 +108,13 @@ body{
   .main_box {
     padding:20px;
 
-    .record{
+    .record {
       position:relative;
       width:100%;
       max-width:600px;
       margin: 0 auto;
 
-      img{
+      img {
         width:100%; 
       }
 
@@ -134,15 +129,15 @@ body{
         opacity:0;
         -webkit-transition:opacity .25s ease;
         -moz-transition:opacity .25s ease;
-        
+
         &:hover{ opacity:1; }
-        
+
         .download {
           position: absolute;
           left: 215px;
           top: 440px;
           width: 170px;
-          
+
           img { 
             width: 100%;
             max-width: 170px;
@@ -152,6 +147,46 @@ body{
       }
 
       .lock{ opacity:1; }
+    }
+
+    .clipping {  
+      display: inline-block;
+      float: left;  
+      width: 50%;
+      color: #777;
+      padding: 5px;
+      &:nth-child(2n+1) {
+        float: right;
+      }
+
+      .clipping-item{
+        float: left;
+        .source, .thumb{
+          margin-bottom: 10px;
+        }
+
+        a{
+          color: #777;
+          text-decoration:none;
+        }
+      }
+    }
+    
+    .fotorama{
+      .fotorama__caption{
+        top: 0;
+      }
+      .fotorama__nav,
+      .fotorama__caption__wrap {
+        background-color: rgba(102, 102, 102, 0.7);
+      }
+      .fotorama__nav{
+        border-bottom: 1px solid #444;
+      }
+      .fotorama__caption__wrap{
+        color: #ddd;
+        padding: 5px 10px;
+      }
     }
   }
 
@@ -164,12 +199,12 @@ body{
   }
 
   .smedia{
-    width:48px;
-    height:48px;
-    background-size: 48px 48px;
+    width:36px;
+    height:36px;
+    background-size: 36px 36px;
     margin:10px;
     background-color: rgba(0, 0, 0, 0);
-    
+
     &.fcbk{
       background-image:url(../img/logo_fb.png);
     }
@@ -192,21 +227,21 @@ body{
       background-image:url(../img/logo_it.png);
     }
     &.bcmp{
-      width:108px;
-      height:48px;
-      background-size: 108px 48px;
+      width:81px;
+      height:36px;
+      background-size: 81px 36px;
       background-image:url(../img/logo_bc.png);
     }
     .smedia.lkdn{
       background-image:url(../img/linkedin.png);
     }
-    
+
     &:hover {
       background-color: rgba(0, 0, 0, 0);
     }
   }
 }
-  
+
 .release_box{
   display:none;
   position:absolute;

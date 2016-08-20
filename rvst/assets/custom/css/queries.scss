@@ -1,83 +1,101 @@
 @media (max-width: 991px) {
-/*---------------*/
-/*---- HOME -----*/
-/*---------------*/
-.home_body{
-  .main_box{
-    margin-top: 15px;
-    .record {
-      img{
-        width:100%;
-      }
+  /*---------------*/
+  /*---- HOME -----*/
+  /*---------------*/
+  .home_body{
+    .main_box{
+      margin-top: 15px;
+      .record {
+        img{
+          width:100%;
+        }
 
-      .overlay {
-        position:relative;
-        opacity:1;
-        padding: 15px;
+        .overlay {
+          position:relative;
+          opacity:1;
+          padding: 15px;
 
-        .ttw-music-player { 
-          width: 100%; 
-          margin: 15px auto;
+          .ttw-music-player { 
+            width: 100%; 
+            margin: 15px auto;
 
-          .title { width: 100px; }
+            .title { width: 100px; }
 
-          .album-cover{
-            display: none;
-            float: none;
-            margin: 0 auto;
-          }
+            .album-cover{
+              display: none;
+              float: none;
+              margin: 0 auto;
+            }
 
-          .track-info { 
-            display: block;
-            float: none;
-            margin: 10px auto;
-            text-align: center;
+            .track-info { 
+              display: block;
+              float: none;
+              margin: 10px auto;
+              text-align: center;
 
-            .title { width: auto; }
-          
-            .buy{
-              position: relative;
-              top: 0;
-              float: right;
+              .title { width: auto; }
+
+              .buy{
+                position: relative;
+                top: 0;
+                float: right;
+              }
+            }
+
+            .player-controls {
+              margin: 12px auto 30px;
+              display: block;
+              float: none;
             }
           }
 
-          .player-controls {
-            margin: 12px auto 30px;
-            display: block;
-            float: none;
-          }
-        }
-        
-        
-        .download {
-          position: relative;
-          text-align: center;
-          margin: 0 auto;  
-          left: 0;
-          top: 0;
-          
-          img { 
-            width: 100%; 
+
+          .download {
+            position: relative;
+            text-align: center;
             margin: 0 auto;  
+            left: 0;
+            top: 0;
+
+            img { 
+              width: 100%; 
+              margin: 0 auto;  
+            }
           }
         }
+      }
+
+      .clipping {
+        width: 100%;
       }
     }
-  }
 
-  .smedia{
-    width:36px;
-    height:36px;
-    background-size: 36px 36px;
-    margin:10px 5px;
+    .smedia{
+      width:36px;
+      height:36px;
+      background-size: 36px 36px;
+      margin:10px 5px;
+    }
+    .smedia.bcmp{
+      width:81px;
+      height:36px;
+      background-size: 81px 36px;
+      background-image:url(../img/logo_bc.png);
+    }
   }
-  .smedia.bcmp{
-        width:81px;
-        height:36px;
-        background-size: 81px 36px;
-        background-image:url(../img/logo_bc.png);
-      }
 }
 
+@media (min-width: 1200px) {
+  .home_body{
+    .smedia{
+      width:40px;
+      height:40px;
+      background-size: 40px 40px;
+    }
+    .smedia.bcmp{
+      width:90px;
+      height:40px;
+      background-size: 90px 40px;
+    }   
+  }
 }

@@ -64,7 +64,6 @@ body {
       color: #EEE;
       font-size: 14px;
       font-weight: 400;
-      min-width: 165px;
       margin-top: 10px;
       border-radius: 20px;
       display: inline-block;
@@ -74,8 +73,6 @@ body {
       text-align: center;
       vertical-align: middle;
       white-space: nowrap; }
-      .home_body .header .btn_pill.contact {
-        cursor: text; }
     .home_body .header #release > .lang-selector {
       display: none; }
     .home_body .header .contact .contact-email {
@@ -116,6 +113,31 @@ body {
             margin: 0 auto; }
       .home_body .main_box .record .lock {
         opacity: 1; }
+    .home_body .main_box .clipping {
+      display: inline-block;
+      float: left;
+      width: 50%;
+      color: #777;
+      padding: 5px; }
+      .home_body .main_box .clipping:nth-child(2n+1) {
+        float: right; }
+      .home_body .main_box .clipping .clipping-item {
+        float: left; }
+        .home_body .main_box .clipping .clipping-item .source, .home_body .main_box .clipping .clipping-item .thumb {
+          margin-bottom: 10px; }
+        .home_body .main_box .clipping .clipping-item a {
+          color: #777;
+          text-decoration: none; }
+    .home_body .main_box .fotorama .fotorama__caption {
+      top: 0; }
+    .home_body .main_box .fotorama .fotorama__nav,
+    .home_body .main_box .fotorama .fotorama__caption__wrap {
+      background-color: rgba(102, 102, 102, 0.7); }
+    .home_body .main_box .fotorama .fotorama__nav {
+      border-bottom: 1px solid #444; }
+    .home_body .main_box .fotorama .fotorama__caption__wrap {
+      color: #ddd;
+      padding: 5px 10px; }
   .home_body .footer_nav {
     background: #151515;
     margin-top: 20px;
@@ -125,9 +147,9 @@ body {
     .home_body .footer_nav ul li {
       display: inline; }
   .home_body .smedia {
-    width: 48px;
-    height: 48px;
-    background-size: 48px 48px;
+    width: 36px;
+    height: 36px;
+    background-size: 36px 36px;
     margin: 10px;
     background-color: transparent; }
     .home_body .smedia.fcbk {
@@ -145,9 +167,9 @@ body {
     .home_body .smedia.itns {
       background-image: url(../img/logo_it.png); }
     .home_body .smedia.bcmp {
-      width: 108px;
-      height: 48px;
-      background-size: 108px 48px;
+      width: 81px;
+      height: 36px;
+      background-size: 81px 36px;
       background-image: url(../img/logo_bc.png); }
     .home_body .smedia .smedia.lkdn {
       background-image: url(../img/linkedin.png); }

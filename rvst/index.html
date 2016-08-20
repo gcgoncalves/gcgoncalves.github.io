@@ -1,99 +1,108 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-    <title>RVST - Fail Together</title>
+    <head>
+        <title>RVST - Fail Together</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <link rel="stylesheet" href="assets/framework/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="assets/framework/js/bootstrap.min.js"></script>
-    
-    <link rel="stylesheet" href="assets/custom/css/style.css" />
-    <link rel="stylesheet" href="assets/custom/css/queries.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8">
+        <base href="/">
 
-    <script type="text/javascript">
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
-      ga('create', 'UA-66937295-1', 'auto');
-      ga('send', 'pageview');
-    
-    </script>
-    
-    <!-- Player -->
-    <script type="text/javascript" src="assets/plugin/jquery-jplayer/jquery.jplayer.js"></script>
-    <script type="text/javascript" src="assets/plugin/ttw-music-player-min.js"></script>
-    <script type="text/javascript" src="assets/custom/js/playlist.js"></script>
-    <script type="text/javascript" src="assets/custom/js/player.js"></script>
-    <script type="text/javascript" src="assets/custom/js/custom.js"></script>
-    <link rel="stylesheet" href="assets/plugin/css/style.css" />
+        <link rel="shortcut icon" href="assets/custom/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="assets/custom/img/favicon.ico" type="image/x-icon">
 
-</head>
-<body>
-    <div class="home_body col-xs-12">
-        <div class="header col-xs-12">
-            <div class="logo col-xs-12 col-md-4 col">
-                <h1>
-                    <img class="hidden-xs hidden-sm" src="assets/custom/img/rvst.png" alt="RUST" />
-                </h1>
+        <link rel="stylesheet" href="assets/framework/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="assets/framework/js/bootstrap.min.js"></script>
+
+        <!-- load angular and angular route via CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+        
+        <!-- fotorama.css -->
+        <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="assets/custom/css/style.css" />
+        <link rel="stylesheet" href="assets/custom/css/queries.css" />
+
+        <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-66937295-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+        <!-- Player -->
+        <script type="text/javascript" src="assets/plugin/jquery-jplayer/jquery.jplayer.js"></script>
+        <script type="text/javascript" src="assets/plugin/ttw-music-player-min.js"></script>
+        <script type="text/javascript" src="assets/custom/js/playlist.js"></script>
+        <script type="text/javascript" src="assets/custom/js/custom.js"></script>
+        <link rel="stylesheet" href="assets/plugin/css/style.css" />
+
+        <script src="app/rvst.js"></script>
+    </head>
+    <body data-ng-app="rvstApp">
+        <div class="home_body col-xs-12">
+            <div class="header col-xs-12">
+                <div class="logo col-xs-12 col-md-3 col">
+                    <h1>
+                        <a href="/"><img class="hidden-xs hidden-sm" src="assets/custom/img/rvst.png" alt="RUST" /></a>
+                    </h1>
+                </div>
+                <div class="main_nav hidden-xs hidden-sm col-md-5">
+                    <ul class="nav nav_menu nav-pills col-xs-12">
+                        <li><a class="smedia fcbk" href="https://www.facebook.com/RVST-865860513495090/timeline/" onclick="ga('send', 'event', 'link', 'click', 'facebook');"></a></li>
+                        <li><a class="smedia sptf" href="https://play.spotify.com/album/43zxBsMkzJlipdS8mi2dpX" onclick="ga('send', 'event', 'link', 'click', 'spotify');"></a></li>
+                        <li><a class="smedia utbe" href="https://www.youtube.com/channel/UC4QteRnhYY0qnF0XnPW9APQ" onclick="ga('send', 'event', 'link', 'click', 'youtube');"></a></li>
+                        <li><a class="smedia itns" href="https://itunes.apple.com/br/album/fail-together-ep/id1041627535" onclick="ga('send', 'event', 'link', 'click', 'itunes');"></a></li>
+                        <li><a class="smedia bcmp" href="http://www.rvst.bandcamp.com" onclick="ga('send', 'event', 'link', 'click', 'bandcamp');"></a></li>
+                    </ul>
+                </div>
+                <div class="main_nav hidden-xs hidden-sm col-md-4 pull-right">
+                    <div class="col-md-6">
+                        <div class="btn btn_pill col-md-12" id="clipping">
+                            <a href="/clippings">Clippings</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="btn btn_pill col-md-12" id="release">
+                            <a href="javascript:void(0)" class="release-label">Release</a>
+                            <div class="lang-selector">
+                                <a href="javascript:void(0)" id="release-pt">PT</a> <span>|</span> <a href="javascript:void(0)" id="release-en">EN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="btn btn_pill col-md-12" id="gallery">
+                            <a href="/gallery">Gallery</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 pull-right">
+                        <div class="btn btn_pill col-md-12 contact">
+                            <a href="mailto:rvstmusic@gmail.com">Contact</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="main_nav hidden-xs hidden-sm col-md-6">
-                <ul class="nav nav_menu nav-pills col-xs-10">
-                <li><a class="smedia fcbk" href="https://www.facebook.com/RVST-865860513495090/timeline/" onclick="ga('send', 'event', 'link', 'click', 'facebook');"></a></li>
-                <li><a class="smedia sptf" href="https://play.spotify.com/album/43zxBsMkzJlipdS8mi2dpX" onclick="ga('send', 'event', 'link', 'click', 'spotify');"></a></li>
-                <li><a class="smedia utbe" href="https://www.youtube.com/channel/UC4QteRnhYY0qnF0XnPW9APQ" onclick="ga('send', 'event', 'link', 'click', 'youtube');"></a></li>
-                <li><a class="smedia itns" href="https://itunes.apple.com/br/album/fail-together-ep/id1041627535" onclick="ga('send', 'event', 'link', 'click', 'itunes');"></a></li>
-                <li><a class="smedia bcmp" href="http://www.rvst.bandcamp.com" onclick="ga('send', 'event', 'link', 'click', 'bandcamp');"></a></li>
+            <div class="main_box col-xs-12" data-ng-view>
+            </div>
+            <div class="footer_nav hidden-md hidden-lg col-xs-12">
+                <ul class="nav nav_menu nav-pills">
+                    <li><a class="smedia fcbk" href="https://www.facebook.com/RVST-865860513495090/timeline/" onclick="ga('send', 'event', 'link', 'click', 'facebook');"></a></li>
+                    <li><a class="smedia sptf" href="https://play.spotify.com/album/43zxBsMkzJlipdS8mi2dpX" onclick="ga('send', 'event', 'link', 'click', 'spotify');"></a></li>
+                    <li><a class="smedia utbe" href="https://www.youtube.com/channel/UC4QteRnhYY0qnF0XnPW9APQ" onclick="ga('send', 'event', 'link', 'click', 'youtube');"></a></li>
+                    <li><a class="smedia itns" href="https://itunes.apple.com/br/album/fail-together-ep/id1041627535" onclick="ga('send', 'event', 'link', 'click', 'itunes');"></a></li>
+                    <li><a class="smedia bcmp" href="http://www.rvst.bandcamp.com" onclick="ga('send', 'event', 'link', 'click', 'bandcamp');"></a></li>
                 </ul>
             </div>
-            <div class="main_nav hidden-xs hidden-sm col-lg-2 pull-right">
-                <div class="col-lg-12">
-                  <div class="btn btn_pill col-lg-12" id="release">
-                    <a href="#" class="release-label">Release</a>
-                    <div class="lang-selector">
-                      <a href="#" id="release-pt">PT</a> <span>|</span> <a href="#" id="release-en">EN</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="btn_pill col-lg-12 contact">
-                    <span class="contact-text">Contact</span>
-                    <span class="contact-email">rvstmusic@gmail.com</span>
-                  </div>
-                </div>
-            </div>
         </div>
-        <div class="main_box col-xs-12">
-            <div class="record">
-                <img src="assets/custom/img/rvst.jpg" alt="Rust - Fail Together" />
-                <div class="overlay">
-                  <div  id="player_holder"></div>
-                  <div class="download">
-                    <a href="assets/custom/music/RVST - Fail Together (EP, 2015).zip" alt="Download here" onclick="ga('send', 'event', 'link', 'click', 'download');">
-                      <img src="assets/custom/img/download_here.jpg" />
-                    </a>
-                  </div>
-                </div>
-            </div>
+        <div class="release_box">
+            <img class="release_img pt" src="assets/custom/img/release.jpg" alt="release">
+            <img class="release_img en" src="assets/custom/img/release_en.jpg" alt="release">
         </div>
-        <div class="footer_nav hidden-md hidden-lg col-xs-12">
-            <ul class="nav nav_menu nav-pills">
-                <li><a class="smedia fcbk" href="https://www.facebook.com/RVST-865860513495090/timeline/" onclick="ga('send', 'event', 'link', 'click', 'facebook');"></a></li>
-                <li><a class="smedia sptf" href="https://play.spotify.com/album/43zxBsMkzJlipdS8mi2dpX" onclick="ga('send', 'event', 'link', 'click', 'spotify');"></a></li>
-                <li><a class="smedia utbe" href="https://www.youtube.com/channel/UC4QteRnhYY0qnF0XnPW9APQ" onclick="ga('send', 'event', 'link', 'click', 'youtube');"></a></li>
-                <li><a class="smedia itns" href="https://itunes.apple.com/br/album/fail-together-ep/id1041627535" onclick="ga('send', 'event', 'link', 'click', 'itunes');"></a></li>
-                <li><a class="smedia bcmp" href="http://www.rvst.bandcamp.com" onclick="ga('send', 'event', 'link', 'click', 'bandcamp');"></a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="release_box">
-        <img class="release_img pt" src="assets/custom/img/release.jpg" alt="release">
-        <img class="release_img en" src="assets/custom/img/release_en.jpg" alt="release">
-    </div>
-</body>
+    </body>
 </html>
