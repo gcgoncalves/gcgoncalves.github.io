@@ -124,7 +124,8 @@ body {
       .home_body .main_box .clipping .clipping-item {
         float: left; }
         .home_body .main_box .clipping .clipping-item .source, .home_body .main_box .clipping .clipping-item .thumb {
-          margin-bottom: 10px; }
+          margin-bottom: 10px;
+          max-width: 100%; }
         .home_body .main_box .clipping .clipping-item a {
           color: #777;
           text-decoration: none; }

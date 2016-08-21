@@ -1,4 +1,7 @@
 @media (max-width: 991px) {
+  body {
+    overflow-x: hidden; }
+
   /*---------------*/
   /*---- HOME -----*/
   /*---------------*/
