@@ -1,9 +1,7 @@
 $(document).ready(function(){
-  //var description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id tortor nisi. Aenean sodales diam ac lacus elementum scelerisque. Suspendisse a dui vitae lacus faucibus venenatis vel id nisl. Proin orci ante, ultricies nec interdum at, iaculis venenatis nulla. ';
 
   //Initialize the plugin
   $('#player_holder').ttwMusicPlayer(playlist, {
-    //description:description,
     currencySymbol:'$',
     buyText:'BUY',
     tracksToShow:5,

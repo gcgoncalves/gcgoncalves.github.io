@@ -8,7 +8,11 @@ rvstApp.config(function ($routeProvider, $locationProvider) {
   })
   .when('/clippings', {
     controller: 'clippingController',
-    templateUrl: 'app/views/clippings.html'
+    templateUrl: 'app/views/clipping.html'
+  })
+  .when('/clipping', {
+    controller: 'clippingController',
+    templateUrl: 'app/views/clipping.html'
   })
   .when('/gallery', {
     controller: 'galleryController',
@@ -35,10 +39,10 @@ rvstApp.controller('homeController', function ($scope) {
 });
 
 rvstApp.controller('clippingController', function ($scope, $http) {
-  $('body').css('background', 'rgba(0, 0, 0, 0) url(assets/custom/img/clippings/bg.png) repeat fixed 50% center / cover');
+  $('body').css('background', 'rgba(0, 0, 0, 0) url(assets/custom/img/clipping/bg.png) repeat fixed 50% center / cover');
 
   $scope.clippings= [];
-  $http.get('app/clippings.json').success(function(data) { 
+  $http.get('app/clipping.json').success(function(data) { 
       $scope.clippings = data;
   });
 });
