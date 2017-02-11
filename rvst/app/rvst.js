@@ -7,8 +7,7 @@ rvstApp.config(function ($routeProvider, $locationProvider) {
     templateUrl: 'app/views/home.html'
   })
   .when('/clippings', {
-    controller: 'clippingController',
-    templateUrl: 'app/views/clipping.html'
+    redirectTo: '/clipping'
   })
   .when('/clipping', {
     controller: 'clippingController',
