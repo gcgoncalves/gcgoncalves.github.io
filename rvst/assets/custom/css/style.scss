@@ -27,7 +27,7 @@ body{
 /*---- HOME -----*/
 /*---------------*/
 body{
-  background: url("../img/bg_salmon.jpg") fixed 50% / cover;
+  background: url("../img/bg_fs.jpg") fixed 50% / cover;
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
@@ -115,10 +115,10 @@ body{
       margin: 0 auto;
 
       img {
-        width:100%; 
+        width:100%;
       }
 
-      .overlay {  
+      .overlay {
         background:rgba(0,0,0,.75);
         position:absolute;
         top:0px;
@@ -138,10 +138,10 @@ body{
           top: 440px;
           width: 170px;
 
-          img { 
+          img {
             width: 100%;
             max-width: 170px;
-            margin: 0 auto;  
+            margin: 0 auto;
           }
         }
       }
@@ -149,9 +149,9 @@ body{
       .lock{ opacity:1; }
     }
 
-    .clipping {  
+    .clipping {
       display: inline-block;
-      float: left;  
+      float: left;
       width: 50%;
       color: #777;
       padding: 5px;
@@ -172,7 +172,7 @@ body{
         }
       }
     }
-    
+
     .fotorama{
       .fotorama__caption{
         top: 0;
@@ -191,10 +191,10 @@ body{
     }
   }
 
-  .footer_nav{ 
+  .footer_nav{
     background:#151515;
     margin-top:20px;
-    text-align:center; 
+    text-align:center;
     ul { display:inline-table; }
     ul li { display:inline; }
   }

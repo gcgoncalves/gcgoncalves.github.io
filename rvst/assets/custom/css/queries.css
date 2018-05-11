@@ -1,71 +1,90 @@
 @media (max-width: 991px) {
   body {
-    overflow-x: hidden; }
-
+    overflow-x: hidden;
+  }
   /*---------------*/
   /*---- HOME -----*/
   /*---------------*/
   .home_body .main_box {
-    margin-top: 15px; }
-    .home_body .main_box .record img {
-      width: 100%; }
-    .home_body .main_box .record .overlay {
-      position: relative;
-      opacity: 1;
-      padding: 15px; }
-      .home_body .main_box .record .overlay .ttw-music-player {
-        width: 100%;
-        margin: 15px auto; }
-        .home_body .main_box .record .overlay .ttw-music-player .title {
-          width: 100px; }
-        .home_body .main_box .record .overlay .ttw-music-player .album-cover {
-          display: none;
-          float: none;
-          margin: 0 auto; }
-        .home_body .main_box .record .overlay .ttw-music-player .track-info {
-          display: block;
-          float: none;
-          margin: 10px auto;
-          text-align: center; }
-          .home_body .main_box .record .overlay .ttw-music-player .track-info .title {
-            width: auto; }
-          .home_body .main_box .record .overlay .ttw-music-player .track-info .buy {
-            position: relative;
-            top: 0;
-            float: right; }
-        .home_body .main_box .record .overlay .ttw-music-player .player-controls {
-          margin: 12px auto 30px;
-          display: block;
-          float: none; }
-      .home_body .main_box .record .overlay .download {
-        position: relative;
-        text-align: center;
-        margin: 0 auto;
-        left: 0;
-        top: 0; }
-        .home_body .main_box .record .overlay .download img {
-          width: 100%;
-          margin: 0 auto; }
-    .home_body .main_box .clipping {
-      width: 100%; }
+    margin-top: 15px;
+  }
+  .home_body .main_box .record img {
+    width: 100%;
+  }
+  .home_body .main_box .record .overlay {
+    position: relative;
+    opacity: 1;
+    padding: 15px;
+  }
+  .home_body .main_box .record .overlay .ttw-music-player {
+    width: 100%;
+    margin: 15px auto;
+  }
+  .home_body .main_box .record .overlay .ttw-music-player .title {
+    width: 100px;
+  }
+  .home_body .main_box .record .overlay .ttw-music-player .album-cover {
+    display: none;
+    float: none;
+    margin: 0 auto;
+  }
+  .home_body .main_box .record .overlay .ttw-music-player .track-info {
+    display: block;
+    float: none;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .home_body .main_box .record .overlay .ttw-music-player .track-info .title {
+    width: auto;
+  }
+  .home_body .main_box .record .overlay .ttw-music-player .track-info .buy {
+    position: relative;
+    top: 0;
+    float: right;
+  }
+  .home_body .main_box .record .overlay .ttw-music-player .player-controls {
+    margin: 12px auto 30px;
+    display: block;
+    float: none;
+  }
+  .home_body .main_box .record .overlay .download {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    top: 0;
+  }
+  .home_body .main_box .record .overlay .download img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .home_body .main_box .clipping {
+    width: 100%;
+  }
   .home_body .smedia {
     width: 36px;
     height: 36px;
     background-size: 36px 36px;
-    margin: 10px 5px; }
+    margin: 10px 5px;
+  }
   .home_body .smedia.bcmp {
     width: 81px;
     height: 36px;
     background-size: 81px 36px;
-    background-image: url(../img/logo_bc.png); } }
+    background-image: url(../img/logo_bc.png);
+  }
+}
+
 @media (min-width: 1200px) {
   .home_body .smedia {
     width: 40px;
     height: 40px;
-    background-size: 40px 40px; }
+    background-size: 40px 40px;
+  }
   .home_body .smedia.bcmp {
     width: 90px;
     height: 40px;
-    background-size: 90px 40px; } }
-
+    background-size: 90px 40px;
+  }
+}
 /*# sourceMappingURL=queries.css.map */
