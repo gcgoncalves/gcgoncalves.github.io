@@ -150,7 +150,6 @@ rvstApp.controller('clippingController', function ($scope, $http) {
 });
 
 rvstApp.controller('galleryController', function ($scope) {
-    randomizeBackground();
 });
 
 rvstApp.directive('clippingItem', function () {
