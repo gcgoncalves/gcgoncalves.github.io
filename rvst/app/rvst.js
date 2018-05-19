@@ -150,6 +150,7 @@ rvstApp.controller('clippingController', function ($scope, $http) {
 });
 
 rvstApp.controller('galleryController', function ($scope) {
+  $('body').css('background', 'rgba(0, 0, 0, 0) url(assets/custom/img/bg_fs.jpg) repeat fixed 50% center / cover');
 });
 
 rvstApp.directive('clippingItem', function () {
