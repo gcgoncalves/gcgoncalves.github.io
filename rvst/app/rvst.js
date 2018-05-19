@@ -113,7 +113,7 @@ rvstApp.controller('fsController', function ($scope) {
       title:'Sirens',
       duration:'01:20',
       artist:'RVST',
-      cover:'assets/custom/img/rvst.jpg'
+      cover:'assets/custom/img/familiar_signs.jpg'
     },
     {
       mp3:'assets/custom/music/familiar_signs/02-Big-Box.mp3',
@@ -122,7 +122,7 @@ rvstApp.controller('fsController', function ($scope) {
       title:'Big Box',
       duration:'04:32',
       artist:'RVST',
-      cover:'assets/custom/img/rvst.jpg'
+      cover:'assets/custom/img/familiar_signs.jpg'
     },
     {
       mp3:'assets/custom/music/familiar_signs/03-Love-Song.mp3',
@@ -131,7 +131,7 @@ rvstApp.controller('fsController', function ($scope) {
       title:'Love Song',
       duration:'01:34',
       artist:'RVST',
-      cover:'assets/custom/img/rvst.jpg'
+      cover:'assets/custom/img/familiar_signs.jpg'
     }
   ];
   $scope.tracksToShow = 3;
