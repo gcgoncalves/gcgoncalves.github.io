@@ -1,12 +1,17 @@
 <!-- <script type="text/javascript" src="assets/custom/js/player.js"></script> -->
-<div class="record">
-    <img src="{{cover}}" alt="Rust - Fail Together" />
-    <div class="overlay">
-        <player playlist=playlist tracks-to-show=tracksToShow></player>
-        <div class="download">
-            <a href="assets/custom/music/RVST - Fail Together (EP, 2015).zip" alt="Download here" onclick="ga('send', 'event', 'link', 'click', 'download');">
-                <img src="assets/custom/img/download_here.jpg" />
-            </a>
+<div class="centralized">
+    <div class="record">
+        <img src="{{cover}}" alt="Rust - Fail Together" />
+        <div class="overlay">
+            <player playlist=playlist tracks-to-show=tracksToShow></player>
+            <div class="download" ng-if="downloadUrl">
+                <a href="{{downloadUrl}}" alt="Download here" onclick="ga('send', 'event', 'link', 'click', 'download');">
+                    <img src="assets/custom/img/download_here.jpg" />
+                </a>
+            </div>
         </div>
+    </div>
+    <div class="album-switcher">
+        <a href={{switchUrl}}><img src="{{switchCover}}" /></a>
     </div>
 </div>

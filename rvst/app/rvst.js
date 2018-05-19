@@ -97,6 +97,9 @@ rvstApp.controller('ftController', function ($scope) {
   ];
   $scope.tracksToShow = 5;
   $scope.cover = 'assets/custom/img/rvst.jpg';
+  $scope.switchCover = 'assets/custom/img/familiar_signs.jpg';
+  $scope.switchUrl = '/familiar_signs';
+  $scope.downloadUrl = 'assets/custom/music/RVST - Fail Together (EP, 2015).zip';
 });
 
 rvstApp.controller('fsController', function ($scope) {
@@ -133,6 +136,8 @@ rvstApp.controller('fsController', function ($scope) {
   ];
   $scope.tracksToShow = 3;
   $scope.cover = 'assets/custom/img/familiar_signs.jpg';
+  $scope.switchCover = 'assets/custom/img/rvst.jpg';
+  $scope.switchUrl = '/fail_together';
 });
 
 rvstApp.controller('clippingController', function ($scope, $http) {

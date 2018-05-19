@@ -8,55 +8,64 @@
   .home_body .main_box {
     margin-top: 15px;
   }
-  .home_body .main_box .record img {
+  .home_body .main_box .centralized .record {
+    max-width: unset;
+  }
+  .home_body .main_box .centralized .record img {
     width: 100%;
   }
-  .home_body .main_box .record .overlay {
+  .home_body .main_box .centralized .record .overlay {
     position: relative;
     opacity: 1;
     padding: 15px;
+    max-width: unset;
   }
-  .home_body .main_box .record .overlay .ttw-music-player {
+  .home_body .main_box .centralized .record .overlay .ttw-music-player {
     width: 100%;
     margin: 15px auto;
   }
-  .home_body .main_box .record .overlay .ttw-music-player .title {
+  .home_body .main_box .centralized .record .overlay .ttw-music-player .title {
     width: 100px;
   }
-  .home_body .main_box .record .overlay .ttw-music-player .album-cover {
+  .home_body .main_box .centralized .record .overlay .ttw-music-player .album-cover {
     display: none;
     float: none;
     margin: 0 auto;
   }
-  .home_body .main_box .record .overlay .ttw-music-player .track-info {
+  .home_body .main_box .centralized .record .overlay .ttw-music-player .track-info {
     display: block;
     float: none;
     margin: 10px auto;
     text-align: center;
   }
-  .home_body .main_box .record .overlay .ttw-music-player .track-info .title {
+  .home_body .main_box .centralized .record .overlay .ttw-music-player .track-info .title {
     width: auto;
   }
-  .home_body .main_box .record .overlay .ttw-music-player .track-info .buy {
+  .home_body .main_box .centralized .record .overlay .ttw-music-player .track-info .buy {
     position: relative;
     top: 0;
     float: right;
   }
-  .home_body .main_box .record .overlay .ttw-music-player .player-controls {
+  .home_body .main_box .centralized .record .overlay .ttw-music-player .player-controls {
     margin: 12px auto 30px;
     display: block;
     float: none;
   }
-  .home_body .main_box .record .overlay .download {
+  .home_body .main_box .centralized .record .overlay .download {
     position: relative;
     text-align: center;
     margin: 0 auto;
     left: 0;
     top: 0;
   }
-  .home_body .main_box .record .overlay .download img {
+  .home_body .main_box .centralized .record .overlay .download img {
     width: 100%;
     margin: 0 auto;
+  }
+  .home_body .main_box .centralized .album-switcher {
+    position: relative;
+    display: block;
+    margin: 30px auto;
   }
   .home_body .main_box .clipping {
     width: 100%;

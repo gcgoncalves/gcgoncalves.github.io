@@ -109,18 +109,30 @@ body.noscroll {
   padding: 20px;
 }
 
-.home_body .main_box .record {
+.home_body .main_box .centralized {
   position: relative;
   width: 100%;
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.home_body .main_box .record img {
+.home_body .main_box .centralized .record {
+  display: inline-block;
+  max-width: 600px;
+}
+
+.home_body .main_box .centralized .album-switcher {
+  display: inline-block;
+  margin: 0 30px;
+  height: 300px;
+  width: 300px;
+}
+
+.home_body .main_box .centralized img {
   width: 100%;
 }
 
-.home_body .main_box .record .overlay {
+.home_body .main_box .centralized .overlay {
   background: rgba(0, 0, 0, 0.75);
   position: absolute;
   top: 0px;
@@ -133,24 +145,24 @@ body.noscroll {
   -moz-transition: opacity .25s ease;
 }
 
-.home_body .main_box .record .overlay:hover {
+.home_body .main_box .centralized .overlay:hover {
   opacity: 1;
 }
 
-.home_body .main_box .record .overlay .download {
+.home_body .main_box .centralized .overlay .download {
   position: absolute;
   left: 215px;
   top: 440px;
   width: 170px;
 }
 
-.home_body .main_box .record .overlay .download img {
+.home_body .main_box .centralized .overlay .download img {
   width: 100%;
   max-width: 170px;
   margin: 0 auto;
 }
 
-.home_body .main_box .record .lock {
+.home_body .main_box .centralized .lock {
   opacity: 1;
 }
 
@@ -200,7 +212,6 @@ body.noscroll {
 
 .home_body .footer_nav {
   background: #151515;
-  margin-top: 20px;
   text-align: center;
 }
 

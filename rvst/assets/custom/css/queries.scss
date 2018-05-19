@@ -6,63 +6,75 @@
   .home_body{
     .main_box{
       margin-top: 15px;
-      .record {
-        img{
-          width:100%;
-        }
 
-        .overlay {
-          position:relative;
-          opacity:1;
-          padding: 15px;
+      .centralized {
+        .record {
+          max-width: unset;
 
-          .ttw-music-player { 
-            width: 100%; 
-            margin: 15px auto;
+          img{
+            width:100%;
+          }
 
-            .title { width: 100px; }
+          .overlay {
+            position: relative;
+            opacity: 1;
+            padding: 15px;
+            max-width: unset;
 
-            .album-cover{
-              display: none;
-              float: none;
-              margin: 0 auto;
-            }
+            .ttw-music-player {
+              width: 100%;
+              margin: 15px auto;
 
-            .track-info { 
-              display: block;
-              float: none;
-              margin: 10px auto;
-              text-align: center;
+              .title { width: 100px; }
 
-              .title { width: auto; }
+              .album-cover{
+                display: none;
+                float: none;
+                margin: 0 auto;
+              }
 
-              .buy{
-                position: relative;
-                top: 0;
-                float: right;
+              .track-info {
+                display: block;
+                float: none;
+                margin: 10px auto;
+                text-align: center;
+
+                .title { width: auto; }
+
+                .buy{
+                  position: relative;
+                  top: 0;
+                  float: right;
+                }
+              }
+
+              .player-controls {
+                margin: 12px auto 30px;
+                display: block;
+                float: none;
               }
             }
 
-            .player-controls {
-              margin: 12px auto 30px;
-              display: block;
-              float: none;
+
+            .download {
+              position: relative;
+              text-align: center;
+              margin: 0 auto;
+              left: 0;
+              top: 0;
+
+              img {
+                width: 100%;
+                margin: 0 auto;
+              }
             }
           }
+        }
 
-
-          .download {
-            position: relative;
-            text-align: center;
-            margin: 0 auto;  
-            left: 0;
-            top: 0;
-
-            img { 
-              width: 100%; 
-              margin: 0 auto;  
-            }
-          }
+        .album-switcher {
+          position: relative;
+          display: block;
+          margin: 30px auto;
         }
       }
 
@@ -97,6 +109,6 @@
       width:90px;
       height:40px;
       background-size: 90px 40px;
-    }   
+    }
   }
 }
