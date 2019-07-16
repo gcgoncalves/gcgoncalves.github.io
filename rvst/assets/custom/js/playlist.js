@@ -56,8 +56,7 @@ var playlist = [{
 }];
 
 var playlist_fs = [{
-  mp3:'assets/custom/music/familiar_signs/01-sirens.mp3',
-  oga:'assets/custom/music/familiar_signs/01-sirens.ogg',
+  mp3:'assets/custom/music/familiar_signs/01-Sirens.mp3',
   rating: 5,
   title:'Sirens',
   duration:'01:20',
@@ -66,7 +65,6 @@ var playlist_fs = [{
 },
 {
   mp3:'assets/custom/music/familiar_signs/02-Big-Box.mp3',
-  oga:'assets/custom/music/familiar_signs/02-Big-Box.ogg',
   rating: 5,
   title:'Big Box',
   duration:'04:32',
@@ -75,7 +73,6 @@ var playlist_fs = [{
 },
 {
   mp3:'assets/custom/music/familiar_signs/03-Love-Song.mp3',
-  oga:'assets/custom/music/familiar_signs/03-Love-Song.ogg',
   rating: 5,
   title:'Love Song',
   duration:'01:34',

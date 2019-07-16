@@ -96,6 +96,7 @@ rvstApp.controller('ftController', function ($scope) {
     }
   ];
   $scope.tracksToShow = 5;
+  $scope.albumTitle = "Fail Together";
   $scope.cover = 'assets/custom/img/rvst.jpg';
   $scope.switchCover = 'assets/custom/img/fs_release.png';
   $scope.switchUrl = '/familiar_signs';
@@ -107,8 +108,8 @@ rvstApp.controller('fsController', function ($scope) {
 
   $scope.playlist = [
     {
-      mp3:'assets/custom/music/familiar_signs/01-sirens.mp3',
-      oga:'assets/custom/music/familiar_signs/01-sirens.ogg',
+      mp3:'assets/custom/music/familiar_signs/01-Sirens.mp3',
+      oga:'assets/custom/music/familiar_signs/01-Sirens.ogg',
       rating: 5,
       title:'Sirens',
       duration:'01:20',
@@ -135,6 +136,7 @@ rvstApp.controller('fsController', function ($scope) {
     }
   ];
   $scope.tracksToShow = 3;
+  $scope.albumTitle = "Familiar Signs";
   $scope.cover = 'assets/custom/img/familiar_signs.jpg';
   $scope.switchCover = 'assets/custom/img/ft_release.png';
   $scope.switchUrl = '/fail_together';
@@ -144,8 +146,8 @@ rvstApp.controller('clippingController', function ($scope, $http) {
   $('body').css('background', 'rgba(0, 0, 0, 0) url(assets/custom/img/clipping/bg.png) repeat fixed 50% center / cover');
 
   $scope.clippings= [];
-  $http.get('app/clipping.json').then(function(data) {
-      $scope.clippings = data;
+  $http.get('app/clipping.json').then(function(response) {
+      $scope.clippings = response.data;
   });
 });
 
